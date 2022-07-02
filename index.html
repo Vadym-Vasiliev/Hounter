@@ -4,8 +4,375 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Hounter</title>
   </head>
-  <body></body>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="header-flex">
+          <a href="#" class="header__link">
+            <img src="./img/logo.svg" class="header__logo" alt="" />
+            Hounter
+          </a>
+
+          <ul class="header-list">
+            <li class="header-list__item">
+              <a class="header-list__link" href="#">About Us</a>
+            </li>
+            <li class="header-list__item">
+              <a class="header-list__link" href="#">Article</a>
+            </li>
+            <li class="header-list__item">
+              <a class="header-list__link" href="#">
+                Property
+                <svg class="header-list__svg">
+                  <use href="./img/sprite/sprite.svg#icon-arrow-down"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <button class="header__btn" type="button">Sign Up!</button>
+        </div>
+
+        <img class="header__img header__img--blue" src="./img/hero-blue.png" alt="blue" />
+        <img class="header__img header__img--green" src="./img/hero-green.png" alt="green" />
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-leftblock">
+            <h1 class="hero-leftblock__title">
+              find the place to live <span class="hero-leftblock__span">your dreams</span> easily
+              here
+            </h1>
+            <p class="hero-leftblock__text">
+              Everything you need about finding your place to live will be here, where it will be
+              easier for you
+            </p>
+            <form class="hero-form">
+              <img src="./img/search.svg" class="hero-form__img-search" alt="search" />
+              <input
+                class="hero-form__input"
+                type="text"
+                name="text"
+                placeholder="Search for the location you want!"
+              />
+
+              <button class="hero-form__btn" type="button">
+                Search
+                <svg class="hero-form__svg">
+                  <use href="./img/sprite/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </form>
+
+            <p class="hero-leftblock__under-text">Our Partnership</p>
+
+            <ul class="hero-partner">
+              <li class="hero-partner__item">
+                <a href="#" class="hero-partner__link">
+                  <img src="./img/partner1.svg" class="hero-partner__img" alt="partner" />
+                </a>
+              </li>
+              <li class="hero-partner__item">
+                <a href="#" class="hero-partner__link">
+                  <img src="./img/partner2.svg" class="hero-partner__img" alt="partner" />
+                </a>
+              </li>
+              <li class="hero-partner__item">
+                <a href="#" class="hero-partner__link">
+                  <img src="./img/partner3.svg" class="hero-partner__img" alt="partner" />
+                </a>
+              </li>
+              <li class="hero-partner__item">
+                <a href="#" class="hero-partner__link">
+                  <img src="./img/partner4.svg" class="hero-partner__img" alt="partner" />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-rightblock">
+            <img src="./img/hero.png" class="hero-rightblock__img" alt="hero" />
+
+            <ul class="rightblock-list">
+              <li class="rightblock-list__item">
+                <div class="rightblock-list__flex">
+                  <ul class="rightblock-img">
+                    <li class="rightblock-img__item">
+                      <img src="./img/hero-ellipse1.png" class="rightblock-img__img" alt="img" />
+                    </li>
+                    <li class="rightblock-img__item">
+                      <img src="./img/hero-ellipse2.png" class="rightblock-img__img" alt="img" />
+                    </li>
+                    <li class="rightblock-img__item">
+                      <img src="./img/hero-ellipse3.png" class="rightblock-img__img" alt="img" />
+                    </li>
+                  </ul>
+                  <div>
+                    <h2 class="rightblock-list__title">1K+ People</h2>
+                    <p class="rightblock-list__text">Successfully Getting Home</p>
+                  </div>
+                </div>
+              </li>
+              <li class="rightblock-list__item">
+                <div class="rightblock-list__flex">
+                  <img src="./img/hero-ellipse4.png" class="rightblock-list__img" alt="img" />
+                  <div>
+                    <h2 class="rightblock-list__title">56 Houses</h2>
+                    <p class="rightblock-list__text">Sold Monthly</p>
+                  </div>
+                </div>
+              </li>
+              <li class="rightblock-list__item">
+                <div class="rightblock-list__flex">
+                  <img src="./img/hero-ellipse5.png" class="rightblock-list__img" alt="img" />
+                  <div>
+                    <h2 class="rightblock-list__title">4K+</h2>
+                    <p class="rightblock-list__text">People Looking for New Homes</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- RECOMMENDATION -->
+      <section class="recommen">
+        <div class="container">
+          <p class="recommen__text">Our Recommendation</p>
+
+          <div class="recommen__flex">
+            <h2 class="recommen__title">Featured House</h2>
+
+            <ul class="recommen-list">
+              <li class="recommen-list__item">
+                <button type="button" class="recommen-list__btn">
+                  <svg class="recommen-list__svg">
+                    <use href="./img/sprite/sprite.svg#icon-recommen1"></use>
+                  </svg>
+                  House
+                </button>
+              </li>
+              <li class="recommen-list__item">
+                <button type="button" class="recommen-list__btn">
+                  <svg class="recommen-list__svg">
+                    <use href="./img/sprite/sprite.svg#icon-recommen2"></use>
+                  </svg>
+                  Villa
+                </button>
+              </li>
+              <li class="recommen-list__item">
+                <button type="button" class="recommen-list__btn">
+                  <svg class="recommen-list__svg">
+                    <use href="./img/sprite/sprite.svg#icon-recommen3"></use>
+                  </svg>
+                  Apartment
+                </button>
+              </li>
+            </ul>
+
+            <ul class="recommen-list-btn">
+              <li class="recommen-list-btn__item">
+                <button class="recommen-list-btn__btn" type="button">
+                  <svg class="recommen-list-btn__svg">
+                    <use href="./img/sprite/sprite.svg#icon-arrow-left"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="recommen-list-btn__item">
+                <button class="recommen-list-btn__btn" type="button">
+                  <svg class="recommen-list-btn__svg">
+                    <use href="./img/sprite/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="recommen-card">
+            <li class="recommen-card__item">
+              <img src="./img/recommen-house1.jpg" class="recommen-card__img" alt="img" />
+              <div class="recommen-card-position">
+                <svg class="recommen-card-position__svg">
+                  <use href="./img/sprite/sprite.svg#icon-recommen-fire"></use>
+                </svg>
+                <p class="recommen-card-position__text">Popular</p>
+              </div>
+              <div class="recommen-card__first-content">
+                <h2 class="recommen-card__title">Roselands House</h2>
+                <p class="recommen-card__price">$ 35.000.000</p>
+              </div>
+              <div class="recommen-card__second-content">
+                <img src="./img/recommen-portret1.png" class="recommen-card__under-img" alt="img" />
+                <div>
+                  <h3 class="recommen-card__under-title">Dianne Russell</h3>
+                  <p class="recommen-card__under-text">Manchester, Kentucky</p>
+                </div>
+              </div>
+            </li>
+            <li class="recommen-card__item">
+              <img src="./img/recommen-house2.jpg" class="recommen-card__img" alt="img" />
+              <div class="recommen-card-position recommen-card-position--blue">
+                <svg class="recommen-card-position__svg">
+                  <use href="./img/sprite/sprite.svg#icon-recommen-house"></use>
+                </svg>
+                <p class="recommen-card-position__text recommen-card-position__text--blue">
+                  Popular
+                </p>
+              </div>
+              <div class="recommen-card__first-content">
+                <h2 class="recommen-card__title">Woodlandside</h2>
+                <p class="recommen-card__price">$ 20.000.000</p>
+              </div>
+              <div class="recommen-card__second-content">
+                <img src="./img/recommen-portret2.png" class="recommen-card__under-img" alt="img" />
+
+                <div>
+                  <h3 class="recommen-card__under-title">Robert Fox</h3>
+                  <p class="recommen-card__under-text">Dr. San Jose, South Dakota</p>
+                </div>
+              </div>
+            </li>
+            <li class="recommen-card__item">
+              <img src="./img/recommen-house3.jpg" class="recommen-card__img" alt="img" />
+              <div class="recommen-card__first-content">
+                <h2 class="recommen-card__title">The Old Lighthouse</h2>
+                <p class="recommen-card__price">$ 44.000.000</p>
+              </div>
+              <div class="recommen-card__second-content">
+                <img src="./img/recommen-portret3.png" class="recommen-card__under-img" alt="img" />
+                <div>
+                  <h3 class="recommen-card__under-title">Ronald Richards</h3>
+                  <p class="recommen-card__under-text">Santa Ana, Illinois</p>
+                </div>
+              </div>
+            </li>
+            <li class="recommen-card__item">
+              <img src="./img/recommen-house4.jpg" class="recommen-card__img" alt="img" />
+              <div class="recommen-card__first-content">
+                <h2 class="recommen-card__title">Cosmo's House</h2>
+                <p class="recommen-card__price">$ 22.000.000</p>
+              </div>
+              <div class="recommen-card__second-content">
+                <img src="./img/recommen-portret4.png" class="recommen-card__under-img" alt="img" />
+                <div>
+                  <h3 class="recommen-card__under-title">Jenny Wilson</h3>
+                  <p class="recommen-card__under-text">Preston Rd. Inglewood, Maine 98380</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SELL -->
+      <section class="sell">
+        <div class="container">
+          <div class="sell-leftblock">
+            <p class="sell-leftblock__text">Ready to Sell!</p>
+            <h2 class="sell-leftblock__title">Let’s tour and see our house!</h2>
+            <p class="sell-leftblock__under-text">
+              Houses recommended by our partners that have been curated to become the home of your
+              dreams!
+            </p>
+            <p class="sell-leftblock__detail-text">House Detail</p>
+
+            <ul class="sell-leftblock-list">
+              <li class="sell-leftblock-list__item">
+                <img class="sell-leftblock-list__img" src="" alt="" />
+                <p class="sell-leftblock-list__text">4 Bedrooms</p>
+              </li>
+              <li class="sell-leftblock-list__item">
+                <img class="sell-leftblock-list__img" src="" alt="" />
+                <p class="sell-leftblock-list__text">2 Bathrooms</p>
+              </li>
+              <li class="sell-leftblock-list__item">
+                <img class="sell-leftblock-list__img" src="" alt="" />
+                <p class="sell-leftblock-list__text">1 Carport</p>
+              </li>
+              <li class="sell-leftblock-list__item">
+                <img class="sell-leftblock-list__img" src="" alt="" />
+                <p class="sell-leftblock-list__text">2 Floors</p>
+              </li>
+            </ul>
+
+            <img src="" alt="img" />
+            <h3>Dianne Russell</h3>
+            <p>Manager Director</p>
+            <button type="button">
+              <img src="" alt="img" />
+              Contact Now
+            </button>
+          </div>
+
+          <div class="sell-rightblock">
+            <img src="" alt="img" />
+            <img src="" alt="img" />
+            <img src="" alt="img" />
+            <img src="" alt="img" />
+            <img src="" alt="img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEW -->
+      <section class="review">
+        <div class="container">
+          <p class="review__text">See Our Review</p>
+          <h2 class="review__title">What Our User Say About Us</h2>
+
+          <ul class="review-list">
+            <li class="review-list__item">
+              <img src="" class="review-list__img" alt="img" />
+              <h3 class="review-list__title">My house sold out fast!</h3>
+              <p class="review-list__text">
+                I was finally able to sell my house quickly through Hounter by immediately setting
+                me up with people who wanted my house. I also do not get a discount from the sale of
+                my house. Awesome!
+              </p>
+              <h3 class="review-list__under-title">Courtney Henry</h3>
+              <p class="review-list__under-text">CEO Andarafish</p>
+            </li>
+            <li class="review-list__item">
+              <img src="" class="review-list__img" alt="img" />
+              <h3 class="review-list__title">Best! I got the house I wanted through Hounter</h3>
+              <p class="review-list__text">
+                Through this website I can get a house with the type and specifications I want very
+                easily, without a complicated process to be able to find information on the house we
+                want.
+              </p>
+              <h3 class="review-list__under-title">Dianne Russell</h3>
+              <p class="review-list__under-text">Manager Director</p>
+            </li>
+            <li class="review-list__item">
+              <img src="" class="review-list__img" alt="img" />
+              <h3 class="review-list__title">Through the Hounter, I can get a house for my self</h3>
+              <p class="review-list__text">
+                By looking for information about what kind of house we want, we managed to get the
+                house we wanted very quickly, and directly connected with the seller to be able to
+                ask about the details, very helpful!
+              </p>
+              <h3 class="review-list__under-title">Esther Howard</h3>
+              <p class="review-list__under-text">Head of Marketing</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
