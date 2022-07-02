@@ -81,6 +81,7 @@
   margin-left: auto;
 
   &__item {
+    position: relative;
     &:not(:last-child) {
       margin-right: 24px;
     }
@@ -114,5 +115,35 @@
     margin-left: 10px;
     height: 18px;
     width: 18px;
+  }
+}
+
+.header-menu {
+  position: absolute;
+  top: 45px;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+
+  background-color: $accent-light;
+
+  &__item {
+  }
+  &__link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+    padding: 10px;
+    display: flex;
+    transform: scale(1);
+    transition: transform 300ms linear;
+
+    color: $accent;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
   }
 }

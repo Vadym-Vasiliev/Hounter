@@ -214,6 +214,10 @@
     background-color: $blue-light;
   }
 
+  &--green {
+    background-color: $accent-light;
+  }
+
   &__svg {
     margin-right: 10px;
     width: 16px;
@@ -230,6 +234,10 @@
 
     &--blue {
       color: $blue-text;
+    }
+
+    &--green {
+      color: $accent;
     }
   }
 }
