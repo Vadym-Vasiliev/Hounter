@@ -989,7 +989,7 @@ body {
 }
 
 .review {
-  padding-bottom: 120px;
+  padding-bottom: 130px;
   position: relative;
 }
 .review__text {
@@ -1023,7 +1023,7 @@ body {
 }
 .review__span {
   position: absolute;
-  bottom: -32px;
+  bottom: -64px;
   left: 50%;
   transform: translate(-50%, -50%);
   display: inline-block;
@@ -1069,7 +1069,7 @@ body {
   transform: translate(-50%, 56px);
   width: 612px;
   background-color: #ffffff;
-  padding: 32px;
+  padding: 32px 32px 0 32px;
   box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
   border-radius: 16px;
 }
@@ -1129,4 +1129,89 @@ body {
   line-height: 1.4;
   margin-left: 16px;
   color: #3c4563;
+}
+
+.partner {
+  padding-top: 220px;
+  padding-bottom: 120px;
+}
+.partner__content {
+  text-align: center;
+}
+.partner__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #f59e0b;
+}
+.partner__text::before {
+  content: "";
+  width: 32px;
+  height: 1px;
+  margin-bottom: 8px;
+  border: 1px solid #f59e0b;
+}
+.partner__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+  color: #1b1c57;
+}
+.partner__btn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.57;
+  border-radius: 32px;
+  border: transparent;
+  padding: 12px 16px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 300ms linear;
+  color: #f0f3fd;
+  background-color: #10b981;
+}
+.partner__btn:hover, .partner__btn:focus {
+  transform: scale(1.1);
+}
+
+.partner-content {
+  display: flex;
+  width: 572px;
+}
+.partner-content__time {
+  display: flex;
+  align-items: center;
+}
+.partner-content__flex-name {
+  display: flex;
+  align-items: center;
+}
+.partner-content__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #3c4563;
+}
+.partner-content__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.78;
+  text-transform: capitalize;
+  color: #1b1c57;
+}
+.partner-content__svg {
+  margin-right: 12px;
 }/*# sourceMappingURL=main.css.map */
