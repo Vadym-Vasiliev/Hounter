@@ -135,7 +135,7 @@
   &__item {
     min-width: 340px;
     transform: scale(1);
-    transition: transform 300ms linear, box-shadow 300ms linear;
+    transition: transform 300ms linear;
     &:not(:last-child) {
       margin-right: 40px;
     }
