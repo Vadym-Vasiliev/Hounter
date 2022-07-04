@@ -115,6 +115,12 @@
     margin-left: 10px;
     height: 18px;
     width: 18px;
+    transform: rotate(0);
+    transition: transform 300ms linear;
+
+    &.active {
+      transform: rotate(180deg);
+    }
   }
 }
 
@@ -124,8 +130,16 @@
   padding: 10px;
   border-radius: 4px;
   width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms linear;
 
   background-color: $accent-light;
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
 
   &__item {
   }

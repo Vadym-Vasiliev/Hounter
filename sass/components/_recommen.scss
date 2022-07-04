@@ -61,6 +61,7 @@
     padding: 12px 24px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 
     transform: scale(1);
     transition: transform 300ms linear, background-color 300ms linear;
@@ -102,6 +103,7 @@
     border-radius: 32px;
     border: transparent;
     padding: 12px 16px;
+    cursor: pointer;
 
     transform: scale(1);
     transition: background-color 300ms linear, transform 300ms linear;
@@ -128,10 +130,10 @@
 
 .recommen-card {
   display: flex;
-  align-items: center;
   justify-content: space-around;
 
   &__item {
+    min-width: 340px;
     transform: scale(1);
     transition: transform 300ms linear, box-shadow 300ms linear;
     &:not(:last-child) {
@@ -143,7 +145,8 @@
       transform: scale(1.05);
     }
   }
-  &__img {
+
+  &__content {
     position: relative;
   }
 
@@ -201,7 +204,7 @@
 
 .recommen-card-position {
   position: absolute;
-  bottom: 38%;
+  bottom: 12px;
   left: 16px;
   padding: 8px 16px;
   border-radius: 32px;

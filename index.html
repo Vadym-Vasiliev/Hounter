@@ -30,7 +30,7 @@
             <li class="header-list__item">
               <a class="header-list__link" href="#">Article</a>
             </li>
-            <li class="header-list__item">
+            <li class="header-list__item width__submenu">
               <a class="header-list__link" href="#">
                 Property
                 <svg class="header-list__svg">
@@ -118,7 +118,7 @@
 
           <div class="hero-rightblock">
             <img src="./img/hero.png" class="hero-rightblock__img" alt="hero" />
-
+            <img src="./img/hero-line.png" class="hero-rightblock__img--line" alt="lines" />
             <ul class="rightblock-list">
               <li class="rightblock-list__item">
                 <div class="rightblock-list__flex">
@@ -133,7 +133,7 @@
                       <img src="./img/hero-ellipse3.png" class="rightblock-img__img" alt="img" />
                     </li>
                   </ul>
-                  <div>
+                  <div class="rightblock-list__after-photo">
                     <h2 class="rightblock-list__title">1K+ People</h2>
                     <p class="rightblock-list__text">Successfully Getting Home</p>
                   </div>
@@ -217,12 +217,14 @@
 
           <ul class="recommen-card">
             <li class="recommen-card__item">
-              <img src="./img/recommen-house1.jpg" class="recommen-card__img" alt="img" />
-              <div class="recommen-card-position">
-                <svg class="recommen-card-position__svg">
-                  <use href="./img/sprite/sprite.svg#icon-recommen-fire"></use>
-                </svg>
-                <p class="recommen-card-position__text">Popular</p>
+              <div class="recommen-card__content">
+                <img src="./img/recommen-house1.jpg" class="recommen-card__img" alt="img" />
+                <div class="recommen-card-position">
+                  <svg class="recommen-card-position__svg">
+                    <use href="./img/sprite/sprite.svg#icon-recommen-fire"></use>
+                  </svg>
+                  <p class="recommen-card-position__text">Popular</p>
+                </div>
               </div>
               <div class="recommen-card__first-content">
                 <h2 class="recommen-card__title">Roselands House</h2>
@@ -237,14 +239,16 @@
               </div>
             </li>
             <li class="recommen-card__item">
-              <img src="./img/recommen-house2.jpg" class="recommen-card__img" alt="img" />
-              <div class="recommen-card-position recommen-card-position--blue">
-                <svg class="recommen-card-position__svg">
-                  <use href="./img/sprite/sprite.svg#icon-recommen-house"></use>
-                </svg>
-                <p class="recommen-card-position__text recommen-card-position__text--blue">
-                  New house
-                </p>
+              <div class="recommen-card__content">
+                <img src="./img/recommen-house2.jpg" class="recommen-card__img" alt="img" />
+                <div class="recommen-card-position recommen-card-position--blue">
+                  <svg class="recommen-card-position__svg">
+                    <use href="./img/sprite/sprite.svg#icon-recommen-house"></use>
+                  </svg>
+                  <p class="recommen-card-position__text recommen-card-position__text--blue">
+                    New house
+                  </p>
+                </div>
               </div>
               <div class="recommen-card__first-content">
                 <h2 class="recommen-card__title">Woodlandside</h2>
@@ -260,14 +264,16 @@
               </div>
             </li>
             <li class="recommen-card__item">
-              <img src="./img/recommen-house3.jpg" class="recommen-card__img" alt="img" />
-              <div class="recommen-card-position recommen-card-position--green">
-                <svg class="recommen-card-position__svg">
-                  <use href="./img/sprite/sprite.svg#icon-recommen-wallet"></use>
-                </svg>
-                <p class="recommen-card-position__text recommen-card-position__text--green">
-                  Best Deals
-                </p>
+              <div class="recommen-card__content">
+                <img src="./img/recommen-house3.jpg" class="recommen-card__img" alt="img" />
+                <div class="recommen-card-position recommen-card-position--green">
+                  <svg class="recommen-card-position__svg">
+                    <use href="./img/sprite/sprite.svg#icon-recommen-wallet"></use>
+                  </svg>
+                  <p class="recommen-card-position__text recommen-card-position__text--green">
+                    Best Deals
+                  </p>
+                </div>
               </div>
               <div class="recommen-card__first-content">
                 <h2 class="recommen-card__title">The Old Lighthouse</h2>
@@ -282,12 +288,14 @@
               </div>
             </li>
             <li class="recommen-card__item">
-              <img src="./img/recommen-house4.jpg" class="recommen-card__img" alt="img" />
-              <div class="recommen-card-position">
-                <svg class="recommen-card-position__svg">
-                  <use href="./img/sprite/sprite.svg#icon-recommen-fire"></use>
-                </svg>
-                <p class="recommen-card-position__text">Popular</p>
+              <div class="recommen-card__content">
+                <img src="./img/recommen-house4.jpg" class="recommen-card__img" alt="img" />
+                <div class="recommen-card-position">
+                  <svg class="recommen-card-position__svg">
+                    <use href="./img/sprite/sprite.svg#icon-recommen-fire"></use>
+                  </svg>
+                  <p class="recommen-card-position__text">Popular</p>
+                </div>
               </div>
               <div class="recommen-card__first-content">
                 <h2 class="recommen-card__title">Cosmo's House</h2>
@@ -308,8 +316,8 @@
       <!-- SELL -->
       <section class="sell">
         <div class="container">
+          <p class="sell-leftblock__text">Ready to Sell!</p>
           <div class="sell-leftblock">
-            <p class="sell-leftblock__text">Ready to Sell!</p>
             <h2 class="sell-leftblock__title">Let’s tour and see our house!</h2>
             <p class="sell-leftblock__under-text">
               Houses recommended by our partners that have been curated to become the home of your
@@ -319,38 +327,66 @@
 
             <ul class="sell-leftblock-list">
               <li class="sell-leftblock-list__item">
-                <img class="sell-leftblock-list__img" src="" alt="" />
+                <svg width="32" height="32">
+                  <use href="./img/sprite/sprite.svg#icon-sell-bed"></use>
+                </svg>
                 <p class="sell-leftblock-list__text">4 Bedrooms</p>
               </li>
               <li class="sell-leftblock-list__item">
-                <img class="sell-leftblock-list__img" src="" alt="" />
+                <svg width="32" height="32">
+                  <use href="./img/sprite/sprite.svg#icon-sell-bath"></use>
+                </svg>
                 <p class="sell-leftblock-list__text">2 Bathrooms</p>
               </li>
               <li class="sell-leftblock-list__item">
-                <img class="sell-leftblock-list__img" src="" alt="" />
+                <svg width="32" height="32">
+                  <use href="./img/sprite/sprite.svg#icon-sell-car"></use>
+                </svg>
                 <p class="sell-leftblock-list__text">1 Carport</p>
               </li>
               <li class="sell-leftblock-list__item">
-                <img class="sell-leftblock-list__img" src="" alt="" />
+                <svg width="32" height="32">
+                  <use href="./img/sprite/sprite.svg#icon-sell-stairs"></use>
+                </svg>
                 <p class="sell-leftblock-list__text">2 Floors</p>
               </li>
             </ul>
 
-            <img src="" alt="img" />
-            <h3>Dianne Russell</h3>
-            <p>Manager Director</p>
-            <button type="button">
-              <img src="" alt="img" />
-              Contact Now
-            </button>
+            <span class="sell-leftblock__span"></span>
+
+            <div class="sell-leftblock-down">
+              <img src="./img/sell-girl.png" class="sell-leftblock-down__img" alt="img" />
+              <div>
+                <h3 class="sell-leftblock-down__title">Dianne Russell</h3>
+                <p class="sell-leftblock-down__text">Manager Director</p>
+              </div>
+              <button class="sell-leftblock-down__btn" type="button">
+                <svg width="24" height="24" class="sell-leftblock-down__svg">
+                  <use href="./img/sprite/sprite.svg#icon-sell-call"></use>
+                </svg>
+                Contact Now
+              </button>
+            </div>
           </div>
 
           <div class="sell-rightblock">
-            <img src="" alt="img" />
-            <img src="" alt="img" />
-            <img src="" alt="img" />
-            <img src="" alt="img" />
-            <img src="" alt="img" />
+            <ul class="sell-rightblock__list">
+              <li class="sell-rightblock__item">
+                <img src="./img/sell-rightblock1.jpg" alt="img" />
+              </li>
+              <li class="sell-rightblock__item">
+                <img src="./img/sell-rightblock2.jpg" alt="img" />
+              </li>
+              <li class="sell-rightblock__item">
+                <img src="./img/sell-rightblock3.jpg" alt="img" />
+              </li>
+              <li class="sell-rightblock__item">
+                <img src="./img/sell-rightblock4.jpg" alt="img" />
+              </li>
+            </ul>
+
+            <img src="./img/sell-orange.png" alt="orange" />
+            <img src="./img/sell-yellow.png" alt="yellow" />
           </div>
         </div>
       </section>
@@ -399,5 +435,7 @@
         </div>
       </section>
     </main>
+
+    <script src="./js/header-menu.js" type="module"></script>
   </body>
 </html>

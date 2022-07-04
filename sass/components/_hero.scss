@@ -8,6 +8,8 @@
   margin-right: 104px;
   display: inline-block;
   &__span {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
 
   &__title {
@@ -131,17 +133,29 @@
 
 .hero-rightblock {
   display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 600px;
+  z-index: -1;
+
   &__img {
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 720px;
     height: 720px;
-    z-index: -1;
+
+    &--line {
+      position: absolute;
+      top: 145px;
+      right: 114px;
+      width: 522px;
+      height: 343px;
+    }
   }
 }
 
 .rightblock-list {
+  position: absolute;
+  bottom: 34px;
+  left: 48px;
   display: flex;
   align-items: center;
 
@@ -151,7 +165,6 @@
   }
   &__item {
     border-radius: 32px;
-    padding: 24px;
 
     background-color: $main-bgc;
 
@@ -161,7 +174,12 @@
   }
 
   &__img {
-    width: 56px;
+    margin-right: 16px;
+  }
+
+  &__after-photo {
+    margin-left: -15px;
+    margin-right: 15px;
   }
 
   &__title {
@@ -188,6 +206,9 @@
   align-items: center;
 
   &__item {
+    &:not(:last-child) {
+      margin-right: -70px;
+    }
   }
 
   &__img {
