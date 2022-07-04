@@ -819,6 +819,18 @@ body {
   padding-bottom: 120px;
   position: relative;
 }
+.sell__img {
+  position: absolute;
+  z-index: -2;
+}
+.sell__img--orange {
+  top: -250px;
+  right: -200px;
+}
+.sell__img--yellow {
+  top: -150px;
+  right: -300px;
+}
 
 .sell-leftblock {
   width: 524px;
@@ -941,4 +953,37 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+}
+.sell-rightblock__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 4px;
+}
+.sell-rightblock__img--main {
+  z-index: -1;
+}
+.sell-rightblock__img--bed {
+  top: 291px;
+  right: 232px;
+}
+.sell-rightblock__img--vase {
+  top: 379px;
+  right: 124px;
+}
+.sell-rightblock__img--room {
+  top: 379px;
+  right: 20px;
+}
+.sell-rightblock__link {
+  position: absolute;
+  right: 220px;
+  top: 184px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
 }/*# sourceMappingURL=main.css.map */

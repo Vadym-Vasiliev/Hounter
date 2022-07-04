@@ -1,6 +1,21 @@
 .sell {
   padding-bottom: 120px;
   position: relative;
+
+  &__img {
+    position: absolute;
+    z-index: -2;
+
+    &--orange {
+      top: -250px;
+      right: -200px;
+    }
+
+    &--yellow {
+      top: -150px;
+      right: -300px;
+    }
+  }
 }
 
 .sell-leftblock {
@@ -145,4 +160,44 @@
   position: absolute;
   top: 0;
   right: 0;
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 4px;
+
+    &--main {
+      z-index: -1;
+    }
+
+    &--bed {
+      top: 291px;
+      right: 232px;
+    }
+
+    &--vase {
+      top: 379px;
+      right: 124px;
+    }
+
+    &--room {
+      top: 379px;
+      right: 20px;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    right: 220px;
+    top: 184px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(255, 255, 255, 0.5);
+  }
 }
