@@ -3,6 +3,11 @@
   height: 46px;
   padding-top: 40px;
   padding-bottom: 96px;
+  z-index: 2;
+
+  &__position {
+    position: relative;
+  }
 
   &__link {
     display: inline-flex;
@@ -55,16 +60,15 @@
 
   &__img {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -100px;
+    left: -250px;
     display: flex;
     width: 438px;
     height: 494px;
     z-index: -1;
-
     &--green {
-      left: 10%;
-      top: -25%;
+      left: -50px;
+      top: -200px;
     }
   }
 }

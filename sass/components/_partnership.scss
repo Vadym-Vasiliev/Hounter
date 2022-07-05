@@ -6,6 +6,11 @@
     text-align: center;
   }
 
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__text {
     font-style: normal;
     font-weight: 500;
@@ -64,6 +69,9 @@
 
 .partner-list {
   &__item {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -76,12 +84,81 @@
     align-items: center;
   }
 
+  &__flex {
+    margin-left: 32px;
+  }
+
   &__flex-name {
     display: flex;
     align-items: center;
+    margin-bottom: 12px;
+  }
+
+  &__img-first {
+    width: 200px;
+    height: 144px;
   }
 
   &__img {
+    width: 32px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57;
+    margin-left: 16px;
+
+    color: #3c4563;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.78;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+
+    color: $secondary-text;
+  }
+
+  &__svg {
+    margin-right: 12px;
+  }
+
+  &__text-time {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: $gray-text;
+  }
+}
+
+.partner-leftblock {
+  width: 572px;
+}
+
+.partner-rightblock {
+  width: 560px;
+  &__img-first {
+    width: 560px;
+    height: 280px;
+    margin-bottom: 24px;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  &__img {
+    width: 32px;
+    margin-right: 16px;
   }
 
   &__text {
@@ -96,11 +173,33 @@
   &__title {
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 1.78;
+    font-size: 24px;
+    line-height: 1.33;
     text-transform: capitalize;
+    margin-bottom: 12px;
 
     color: $secondary-text;
+  }
+
+  &__under-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    opacity: 0.75;
+    margin-bottom: 16px;
+  }
+
+  &__time-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: $gray-text;
+  }
+
+  &__time-block {
+    display: flex;
   }
 
   &__svg {

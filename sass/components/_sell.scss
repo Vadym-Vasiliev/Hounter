@@ -1,10 +1,14 @@
 .sell {
   padding-bottom: 120px;
-  position: relative;
+
+  &__position {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__img {
     position: absolute;
-    z-index: -2;
 
     &--orange {
       top: -250px;
@@ -22,7 +26,7 @@
   width: 524px;
   margin-left: 40px;
   margin-right: 148px;
-  display: inline-block;
+
   &__text {
     font-style: normal;
     font-weight: 500;
@@ -32,6 +36,7 @@
     margin-bottom: 12px;
     display: flex;
     align-items: center;
+    margin-left: -40px;
 
     color: $gold-text;
     &::before {
@@ -81,7 +86,7 @@
     width: 440px;
     height: 2px;
     display: inline-block;
-
+    margin-bottom: 32px;
     margin-top: 32px;
 
     background-color: #f0f3fd;
@@ -105,7 +110,8 @@
   display: flex;
   align-items: center;
   &__img {
-    margin-left: -30px;
+    width: 56px;
+    margin-right: 24px;
   }
 
   &__title {
@@ -137,6 +143,7 @@
     display: flex;
     align-items: center;
     padding: 13px 16px;
+    cursor: pointer;
 
     transform: scale(1);
     transition: transform 300ms linear;
@@ -157,10 +164,9 @@
 }
 
 .sell-rightblock {
-  position: absolute;
-  top: 0;
-  right: 0;
-
+  z-index: 1;
+  width: 528px;
+  height: 459px;
   &__img {
     position: absolute;
     top: 0;
@@ -174,16 +180,22 @@
     &--bed {
       top: 291px;
       right: 232px;
+      width: 296px;
+      height: 168px;
     }
 
     &--vase {
       top: 379px;
       right: 124px;
+      width: 96px;
+      height: 80px;
     }
 
     &--room {
       top: 379px;
       right: 20px;
+      width: 96px;
+      height: 80px;
     }
   }
 
@@ -198,6 +210,15 @@
     align-items: center;
     justify-content: center;
 
+    transform: scale(1);
+    transition: transform 300ms linear;
+
     background-color: rgba(255, 255, 255, 0.5);
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+      background-color: rgba(255, 255, 255, 0.6);
+    }
   }
 }
