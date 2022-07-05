@@ -20,7 +20,7 @@
         <div class="header__position">
           <div class="header-flex">
             <a href="#" class="header__link">
-              <img src="./img/logo.svg" class="header__logo" alt="" />
+              <img src="./img/logo.svg" class="header__logo" alt="logo" />
               Hounter
             </a>
 
@@ -344,25 +344,25 @@
 
               <ul class="sell-leftblock-list">
                 <li class="sell-leftblock-list__item">
-                  <svg width="32" height="32">
+                  <svg class="sell-leftblock-list__svg" width="32" height="32">
                     <use href="./img/sprite/sprite.svg#icon-sell-bed"></use>
                   </svg>
                   <p class="sell-leftblock-list__text">4 Bedrooms</p>
                 </li>
                 <li class="sell-leftblock-list__item">
-                  <svg width="32" height="32">
+                  <svg class="sell-leftblock-list__svg" width="32" height="32">
                     <use href="./img/sprite/sprite.svg#icon-sell-bath"></use>
                   </svg>
                   <p class="sell-leftblock-list__text">2 Bathrooms</p>
                 </li>
                 <li class="sell-leftblock-list__item">
-                  <svg width="32" height="32">
+                  <svg class="sell-leftblock-list__svg" width="32" height="32">
                     <use href="./img/sprite/sprite.svg#icon-sell-car"></use>
                   </svg>
                   <p class="sell-leftblock-list__text">1 Carport</p>
                 </li>
                 <li class="sell-leftblock-list__item">
-                  <svg width="32" height="32">
+                  <svg class="sell-leftblock-list__svg" width="32" height="32">
                     <use href="./img/sprite/sprite.svg#icon-sell-stairs"></use>
                   </svg>
                   <p class="sell-leftblock-list__text">2 Floors</p>
@@ -536,121 +536,307 @@
       <!-- PARTNER -->
       <section class="partner">
         <div class="container">
-          <div class="partner__content">
-            <p class="partner__text">See tips and trick from our partnership</p>
-            <h2 class="partner__title">
-              Find out more about <br />
-              selling and buying homes
-            </h2>
-            <button class="partner__btn" type="button">More Artikel</button>
-          </div>
-
-          <div class="partner__flex">
-            <div class="partner-leftblock">
-              <ul class="partner-list">
-                <li class="partner-list__item">
-                  <div class="partner-content">
-                    <img class="partner-content__img-first" src="./img/partner1.png" alt="png" />
-
-                    <div class="partner-content__flex">
-                      <div class="partner-content__flex-name">
-                        <img
-                          class="partner-content__img"
-                          src="./img/recommen-portret1.png"
-                          alt="png"
-                        />
-                        <p class="partner-content__text">Dianne Russell</p>
-                      </div>
-                      <h3 class="partner-content__title">
-                        The things we need to check when we want to buy a house
-                      </h3>
-                      <div class="partner-content__time">
-                        <svg class="partner-content__svg" width="24" height="24">
-                          <use href="./img/sprite/sprite.svg#icon-partner-clock"></use>
-                        </svg>
-                        <p class="partner-content__text-time">4 min read | 25 Apr 2021</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="partner-list__item">
-                  <div class="partner-content">
-                    <img class="partner-content__img-first" src="./img/partner2.png" alt="png" />
-
-                    <div class="partner-content__flex">
-                      <div class="partner-content__flex-name">
-                        <img
-                          class="partner-content__img"
-                          src="./img/recommen-portret2.png"
-                          alt="png"
-                        />
-                        <p class="partner-content__text">Courtney Henry</p>
-                      </div>
-
-                      <h3 class="partner-content__title">
-                        7 Ways to distinguish the quality of the house we want to buy
-                      </h3>
-                      <div class="partner-content__time">
-                        <svg class="partner-content__svg" width="24" height="24">
-                          <use href="./img/sprite/sprite.svg#icon-partner-clock"></use>
-                        </svg>
-                        <p class="partner-content__text-time">6 min read | 24 Apr 2021</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="partner-list__item">
-                  <div class="partner-content">
-                    <img class="partner-content__img-first" src="./img/partner3.png" alt="png" />
-
-                    <div class="partner-content__flex">
-                      <div class="partner-content__flex-name">
-                        <img
-                          class="partner-content__img"
-                          src="./img/recommen-portret3.png"
-                          alt="png"
-                        />
-                        <p class="partner-content__text">Darlene Robertson</p>
-                      </div>
-
-                      <h3 class="partner-content__title">
-                        The best way to know the quality of the house we want to buy
-                      </h3>
-                      <div class="partner-content__time">
-                        <svg class="partner-content__svg" width="24" height="24">
-                          <use href="./img/sprite/sprite.svg#icon-partner-clock"></use>
-                        </svg>
-                        <p class="partner-content__text-time">2 min read | 24 Apr 2021</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+          <div class="partner__position">
+            <img class="partner__img" src="./img/partner-blue.png" alt="png" />
+            <img class="partner__img partner__img--green" src="./img/partner-green.png" alt="png" />
+            <div class="partner__content">
+              <p class="partner__text">See tips and trick from our partnership</p>
+              <h2 class="partner__title">
+                Find out more about <br />
+                selling and buying homes
+              </h2>
+              <button class="partner__btn" type="button">More Artikel</button>
             </div>
 
-            <div class="partner-rightblock">
-              <img class="partner-rightblock__img-first" src="./img/partner4.png" alt="png" />
+            <div class="partner__flex">
+              <div class="partner-leftblock">
+                <ul class="partner-list">
+                  <li class="partner-list__item">
+                    <div class="partner-content">
+                      <img class="partner-content__img-first" src="./img/partner1.png" alt="png" />
 
-              <div class="partner-rightblock__name">
-                <img class="partner-rightblock__img" src="./img/recommen-portret4.png" alt="png" />
-                <p class="partner-rightblock__text">Cameron Williamson</p>
+                      <div class="partner-content__flex">
+                        <div class="partner-content__flex-name">
+                          <img
+                            class="partner-content__img"
+                            src="./img/recommen-portret1.png"
+                            alt="png"
+                          />
+                          <p class="partner-content__text">Dianne Russell</p>
+                        </div>
+                        <h3 class="partner-content__title">
+                          The things we need to check when we want to buy a house
+                        </h3>
+                        <div class="partner-content__time">
+                          <svg class="partner-content__svg" width="24" height="24">
+                            <use href="./img/sprite/sprite.svg#icon-partner-clock"></use>
+                          </svg>
+                          <p class="partner-content__text-time">4 min read | 25 Apr 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="partner-list__item">
+                    <div class="partner-content">
+                      <img class="partner-content__img-first" src="./img/partner2.png" alt="png" />
+
+                      <div class="partner-content__flex">
+                        <div class="partner-content__flex-name">
+                          <img
+                            class="partner-content__img"
+                            src="./img/recommen-portret2.png"
+                            alt="png"
+                          />
+                          <p class="partner-content__text">Courtney Henry</p>
+                        </div>
+
+                        <h3 class="partner-content__title">
+                          7 Ways to distinguish the quality of the house we want to buy
+                        </h3>
+                        <div class="partner-content__time">
+                          <svg class="partner-content__svg" width="24" height="24">
+                            <use href="./img/sprite/sprite.svg#icon-partner-clock"></use>
+                          </svg>
+                          <p class="partner-content__text-time">6 min read | 24 Apr 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="partner-list__item">
+                    <div class="partner-content">
+                      <img class="partner-content__img-first" src="./img/partner3.png" alt="png" />
+
+                      <div class="partner-content__flex">
+                        <div class="partner-content__flex-name">
+                          <img
+                            class="partner-content__img"
+                            src="./img/recommen-portret3.png"
+                            alt="png"
+                          />
+                          <p class="partner-content__text">Darlene Robertson</p>
+                        </div>
+
+                        <h3 class="partner-content__title">
+                          The best way to know the quality of the house we want to buy
+                        </h3>
+                        <div class="partner-content__time">
+                          <svg class="partner-content__svg" width="24" height="24">
+                            <use href="./img/sprite/sprite.svg#icon-partner-clock"></use>
+                          </svg>
+                          <p class="partner-content__text-time">2 min read | 24 Apr 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <h3 class="partner-rightblock__title">12 Things to know before buying a house</h3>
-              <p class="partner-rightblock__under-text">
-                Want to buy a house but are unsure about what we should know, here I will try to
-                explain what we should know and check when we want to buy a house
-              </p>
-              <div class="partner-rightblock__time-block">
-                <svg class="partner-rightblock__svg" width="24" height="24">
-                  <use href="./img/sprite/sprite.svg#icon-partner-clock"></use>
-                </svg>
-                <p class="partner-rightblock__time-text">8 min read | 25 Apr 2021</p>
+
+              <div class="partner-rightblock">
+                <img class="partner-rightblock__img-first" src="./img/partner4.png" alt="png" />
+
+                <div class="partner-rightblock__name">
+                  <img
+                    class="partner-rightblock__img"
+                    src="./img/recommen-portret4.png"
+                    alt="png"
+                  />
+                  <p class="partner-rightblock__text">Cameron Williamson</p>
+                </div>
+                <h3 class="partner-rightblock__title">12 Things to know before buying a house</h3>
+                <p class="partner-rightblock__under-text">
+                  Want to buy a house but are unsure about what we should know, here I will try to
+                  explain what we should know and check when we want to buy a house
+                </p>
+                <div class="partner-rightblock__time-block">
+                  <svg class="partner-rightblock__svg" width="24" height="24">
+                    <use href="./img/sprite/sprite.svg#icon-partner-clock"></use>
+                  </svg>
+                  <p class="partner-rightblock__time-text">8 min read | 25 Apr 2021</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- SUBSCRIBE -->
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe__block">
+            <div class="subscribe-leftblock">
+              <ul class="subscribe-leftblock__list">
+                <li class="subscribe-leftblock__item">
+                  <img class="subscribe-leftblock__img" src="./img/subscribe1.png" alt="img" />
+                </li>
+                <li class="subscribe-leftblock__item">
+                  <img
+                    class="subscribe-leftblock__img subscribe-leftblock__img--man"
+                    src="./img/recommen-portret3.png"
+                    alt="img"
+                  />
+                </li>
+                <li class="subscribe-leftblock__item">
+                  <img
+                    class="subscribe-leftblock__img subscribe-leftblock__img--girl"
+                    src="./img/recommen-portret4.png"
+                    alt="img"
+                  />
+                </li>
+                <li class="subscribe-leftblock__item">
+                  <img
+                    class="subscribe-leftblock__img subscribe-leftblock__img--house"
+                    src="./img/subscribe4.png"
+                    alt="img"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="subscribe-centerblock">
+              <h2 class="subscribe-centerblock__title">
+                Subscribe For More Info and update from Hounter
+              </h2>
+              <form class="subscribe-centerblock-form">
+                <svg class="subscribe-centerblock-form__svg" width="24" height="24">
+                  <use href="./img/sprite/sprite.svg#icon-subscribe-letter"></use>
+                </svg>
+                <input
+                  class="subscribe-centerblock-form__input"
+                  type="email"
+                  name="email"
+                  placeholder="Your email here"
+                />
+                <button class="subscribe-centerblock-form__btn" type="button">Subsribe Now</button>
+              </form>
+            </div>
+            <div class="subscribe-rightblock">
+              <ul class="subscribe-rightblock__list">
+                <li class="subscribe-rightblock__item">
+                  <img class="subscribe-rightblock__img" src="./img/subscribe3.png" alt="img" />
+                </li>
+                <li class="subscribe-rightblock__item">
+                  <img
+                    class="subscribe-rightblock__img subscribe-rightblock__img--girl"
+                    src="./img/recommen-portret1.png"
+                    alt="img"
+                  />
+                </li>
+                <li class="subscribe-rightblock__item">
+                  <img
+                    class="subscribe-rightblock__img subscribe-rightblock__img--man"
+                    src="./img/recommen-portret2.png"
+                    alt="img"
+                  />
+                </li>
+                <li class="subscribe-rightblock__item">
+                  <img
+                    class="subscribe-rightblock__img subscribe-rightblock__img--room"
+                    src="./img/subscribe4.png"
+                    alt="img"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- FOOTER -->
+    <section class="footer">
+      <div class="container">
+        <div class="footer__block">
+          <img class="footer__img" src="./img/footer-blue.png" alt="png" />
+          <img class="footer__img footer__img--green" src="./img/footer-green.png" alt="png" />
+          <div class="footer-leftblock">
+            <a href="#" class="footer-leftblock__link">
+              <img src="./img/logo.svg" class="footer-leftblock__logo" alt="logo" />
+              Hounter
+            </a>
+            <p class="footer-leftblock__text">
+              We provide information about properties such as houses, villas and apartments to help
+              people find their dream home
+            </p>
+
+            <ul class="footer-leftblock__list">
+              <li class="footer-leftblock__item">
+                <a class="footer-leftblock__soc-link" href="#">
+                  <svg class="footer-leftblock__svg" width="32" height="32">
+                    <use href="./img/sprite/sprite.svg#icon-footer1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-leftblock__item">
+                <a class="footer-leftblock__soc-link" href="#">
+                  <svg class="footer-leftblock__svg" width="32" height="32">
+                    <use href="./img/sprite/sprite.svg#icon-footer2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-leftblock__item">
+                <a class="footer-leftblock__soc-link" href="#">
+                  <svg class="footer-leftblock__svg" width="32" height="32">
+                    <use href="./img/sprite/sprite.svg#icon-footer3"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-rightblock">
+            <ul class="footer-rightblock__list">
+              <li class="footer-rightblock__item">
+                <p class="footer-rightblock__text">Property</p>
+                <ul class="footer-second-list">
+                  <li class="footer-second-list__item">
+                    <a class="footer-second-list__link" href="#">House</a>
+                  </li>
+                  <li class="footer-second-list__item">
+                    <a class="footer-second-list__link" href="#">Apartment</a>
+                  </li>
+                  <li class="footer-second-list__item">
+                    <a class="footer-second-list__link" href="#">Villa</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-rightblock__item">
+                <p class="footer-rightblock__text">Article</p>
+                <ul class="footer-second-list">
+                  <li class="footer-second-list__item">
+                    <a class="footer-second-list__link" href="#">New Article</a>
+                  </li>
+                  <li class="footer-second-list__item">
+                    <a class="footer-second-list__link" href="#">Popular Article</a>
+                  </li>
+                  <li class="footer-second-list__item">
+                    <a class="footer-second-list__link" href="#">Most Read</a>
+                  </li>
+                  <li class="footer-second-list__item">
+                    <a class="footer-second-list__link" href="#">Tips & Tricks</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-rightblock__item">
+                <p class="footer-rightblock__text">Contact</p>
+                <ul class="footer-second-list">
+                  <li class="footer-second-list__item">
+                    <a class="footer-second-list__link" href="#"
+                      >2464 Royal Ln. Mesa, New Jersey 45463</a
+                    >
+                  </li>
+                  <li class="footer-second-list__item">
+                    <a class="footer-second-list__link" href="tel:6715550110">(671) 555-0110</a>
+                  </li>
+                  <li class="footer-second-list__item">
+                    <a class="footer-second-list__link" href="mailto:info@hounter.com"
+                      >info@hounter.com</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="./js/header-menu.js" type="module"></script>
   </body>

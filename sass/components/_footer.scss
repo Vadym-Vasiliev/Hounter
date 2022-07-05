@@ -1,0 +1,165 @@
+.footer {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  &__block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    position: absolute;
+    top: -250px;
+    right: -500px;
+
+    &--green {
+      top: -150px;
+      right: -200px;
+    }
+  }
+}
+
+.footer-leftblock {
+  width: 320px;
+
+  &__link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    text-transform: capitalize;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 16px;
+    transform: scale(1);
+    transition: transform 300ms linear;
+
+    color: $secondary-text;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+
+  &__logo {
+    margin-right: 12px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    opacity: 0.75;
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+  &__soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: transform 300ms linear, color 300ms linear, background-color 300ms linear;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+
+    color: #3c4563;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+      color: #fff;
+      background-color: #10b981;
+    }
+  }
+
+  &__svg {
+    fill: currentColor;
+  }
+}
+
+.footer-rightblock {
+  z-index: 1;
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 87px;
+    }
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+
+    color: #0e1735;
+  }
+}
+
+.footer-second-list {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+  &__link {
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    text-transform: capitalize;
+    display: block;
+
+    transform: rotate(0);
+    transition: transform 300ms linear, color 300ms linear;
+
+    color: $gray-text;
+
+    &:hover,
+    &:focus {
+      color: $accent;
+      transform: rotate(5deg);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 300ms linear;
+
+      background-color: $accent;
+    }
+
+    &:hover:after,
+    &:focus:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+      color: $accent;
+    }
+  }
+}

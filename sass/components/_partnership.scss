@@ -2,6 +2,20 @@
   padding-top: 220px;
   padding-bottom: 120px;
 
+  &__position {
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    top: -200px;
+    left: -400px;
+
+    &--green {
+      top: 100px;
+    }
+  }
+
   &__content {
     text-align: center;
   }
@@ -140,10 +154,13 @@
 
 .partner-leftblock {
   width: 572px;
+  height: 524px;
+  z-index: 1;
 }
 
 .partner-rightblock {
   width: 560px;
+  height: 480px;
   &__img-first {
     width: 560px;
     height: 280px;
