@@ -1,6 +1,7 @@
 .footer {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
+  overflow: hidden;
 
   &__block {
     position: relative;
@@ -10,7 +11,7 @@
 
   &__img {
     position: absolute;
-    top: -250px;
+    top: -180px;
     right: -500px;
 
     &--green {

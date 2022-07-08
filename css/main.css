@@ -288,7 +288,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -1487,7 +1487,8 @@ body {
 
 .footer {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
+  overflow: hidden;
 }
 .footer__block {
   position: relative;
@@ -1496,7 +1497,7 @@ body {
 }
 .footer__img {
   position: absolute;
-  top: -250px;
+  top: -180px;
   right: -500px;
 }
 .footer__img--green {
