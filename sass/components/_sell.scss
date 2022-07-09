@@ -1,5 +1,6 @@
 .sell {
   padding-bottom: 120px;
+  padding-top: 180px;
   overflow: hidden;
 
   &__position {
@@ -114,6 +115,12 @@
 .sell-leftblock-down {
   display: flex;
   align-items: center;
+
+  &__block {
+    display: flex;
+    align-items: center;
+    margin-right: 57px;
+  }
   &__img {
     width: 56px;
     margin-right: 24px;
@@ -138,7 +145,6 @@
   }
 
   &__btn {
-    margin-left: 57px;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;

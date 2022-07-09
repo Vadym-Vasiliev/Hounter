@@ -307,6 +307,27 @@ body {
   margin: -1px;
 }
 
+.gold-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  margin-left: -40px;
+  color: #f59e0b;
+}
+.gold-text::before {
+  content: "";
+  width: 32px;
+  height: 1px;
+  margin-right: 8px;
+  border: 1px solid #f59e0b;
+  background-color: #f59e0b;
+}
+
 .header {
   position: relative;
   height: 46px;
@@ -638,32 +659,11 @@ body {
   width: 56px;
 }
 
-.recommen {
-  padding-bottom: 120px;
-}
 .recommen__flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
-}
-.recommen__text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.28;
-  text-transform: capitalize;
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-  color: #f59e0b;
-}
-.recommen__text::before {
-  content: "";
-  width: 32px;
-  height: 1px;
-  margin-right: 8px;
-  border: 1px solid #f59e0b;
 }
 .recommen__title {
   font-style: normal;
@@ -677,11 +677,25 @@ body {
 .recommen-list {
   display: flex;
   align-items: center;
+  margin-right: 136px;
 }
 .recommen-list__item:not(:last-child) {
   margin-right: 56px;
 }
-.recommen-list__btn {
+
+.label-radiobtn__input {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.label-radiobtn__span {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -692,29 +706,29 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
-  transform: scale(1);
-  transition: transform 300ms linear, background-color 300ms linear;
-  background-color: transparent;
-  color: #888b97;
 }
-.recommen-list__btn:hover, .recommen-list__btn:focus {
-  transform: scale(1.1);
+.label-radiobtn .label-radiobtn__input:checked ~ .label-radiobtn__span {
   color: #047857;
   background-color: #d1fae5;
 }
-.recommen-list__btn:hover .recommen-list__svg, .recommen-list__btn:focus .recommen-list__svg {
+.label-radiobtn .label-radiobtn__input:checked ~ .label-radiobtn__span .label-radiobtn__svg {
   fill: #047857;
 }
-.recommen-list__svg {
+.label-radiobtn__svg {
   fill: currentColor;
   width: 24px;
   height: 24px;
   margin-right: 8px;
 }
 
+.recommen-form {
+  display: flex;
+}
+
 .recommen-list-btn {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 .recommen-list-btn__item:not(:last-child) {
   margin-right: 16px;
@@ -808,13 +822,18 @@ body {
   border-radius: 32px;
   display: flex;
   align-items: center;
+}
+.recommen-card-position--one {
   background-color: #fee2e2;
 }
-.recommen-card-position--blue {
+.recommen-card-position--two {
   background-color: #dbeafe;
 }
-.recommen-card-position--green {
+.recommen-card-position--three {
   background-color: #d1fae5;
+}
+.recommen-card-position--four {
+  background-color: #fee2e2;
 }
 .recommen-card-position__svg {
   margin-right: 10px;
@@ -826,6 +845,8 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28;
+}
+.recommen-card-position__text--red {
   color: #ef4444;
 }
 .recommen-card-position__text--blue {
@@ -837,6 +858,7 @@ body {
 
 .sell {
   padding-bottom: 120px;
+  padding-top: 180px;
   overflow: hidden;
 }
 .sell__position {
@@ -936,6 +958,11 @@ body {
   display: flex;
   align-items: center;
 }
+.sell-leftblock-down__block {
+  display: flex;
+  align-items: center;
+  margin-right: 57px;
+}
 .sell-leftblock-down__img {
   width: 56px;
   margin-right: 24px;
@@ -955,7 +982,6 @@ body {
   color: #888b97;
 }
 .sell-leftblock-down__btn {
-  margin-left: 57px;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1036,23 +1062,12 @@ body {
   overflow: hidden;
 }
 .review__text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.28;
-  text-transform: capitalize;
-  margin-bottom: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #f59e0b;
 }
 .review__text::before {
-  content: "";
-  width: 32px;
-  height: 1px;
   margin-bottom: 8px;
-  border: 1px solid #f59e0b;
 }
 .review__title {
   font-style: normal;
@@ -1203,23 +1218,12 @@ body {
   justify-content: space-between;
 }
 .partner__text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.28;
-  text-transform: capitalize;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 12px;
-  color: #f59e0b;
 }
 .partner__text::before {
-  content: "";
-  width: 32px;
-  height: 1px;
   margin-bottom: 8px;
-  border: 1px solid #f59e0b;
 }
 .partner__title {
   font-style: normal;

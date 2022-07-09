@@ -181,35 +181,45 @@
       <!-- RECOMMENDATION -->
       <section class="recommen">
         <div class="container">
-          <p class="recommen__text">Our Recommendation</p>
+          <p class="recommen__text gold-text">Our Recommendation</p>
 
           <div class="recommen__flex">
             <h2 class="recommen__title">Featured House</h2>
 
-            <ul class="recommen-list">
+          <form class="recommen-form">
+              <ul class="recommen-list">
               <li class="recommen-list__item">
-                <button type="button" class="recommen-list__btn">
-                  <svg class="recommen-list__svg">
-                    <use href="./img/sprite/sprite.svg#icon-recommen1"></use>
-                  </svg>
-                  House
-                </button>
+                <label class="label-radiobtn" for="radio">
+                  <input class="label-radiobtn__input" type="radio" name="radio-btn" id="radio" />
+                  <span class="label-radiobtn__span">
+                    <svg class="label-radiobtn__svg">
+                      <use href="./img/sprite/sprite.svg#icon-recommen1"></use>
+                      </svg
+                    >House
+                  </span>
+                </label>
               </li>
               <li class="recommen-list__item">
-                <button type="button" class="recommen-list__btn">
-                  <svg class="recommen-list__svg">
-                    <use href="./img/sprite/sprite.svg#icon-recommen2"></use>
-                  </svg>
-                  Villa
-                </button>
+                <label class="label-radiobtn" for="radio">
+                  <input class="label-radiobtn__input" type="radio" name="radio-btn" id="radio" />
+                  <span class="label-radiobtn__span">
+                    <svg class="label-radiobtn__svg">
+                      <use href="./img/sprite/sprite.svg#icon-recommen2"></use>
+                      </svg
+                    >Villa
+                  </span>
+                </label>
               </li>
               <li class="recommen-list__item">
-                <button type="button" class="recommen-list__btn">
-                  <svg class="recommen-list__svg">
-                    <use href="./img/sprite/sprite.svg#icon-recommen3"></use>
-                  </svg>
-                  Apartment
-                </button>
+                <label class="label-radiobtn" for="radio">
+                  <input class="label-radiobtn__input" type="radio" name="radio-btn" id="radio" />
+                  <span class="label-radiobtn__span">
+                    <svg class="label-radiobtn__svg">
+                      <use href="./img/sprite/sprite.svg#icon-recommen3"></use>
+                      </svg
+                    >Apartment
+                  </span>
+                </label>
               </li>
             </ul>
 
@@ -230,16 +240,17 @@
               </li>
             </ul>
           </div>
+          </form>
 
           <ul class="recommen-card">
             <li class="recommen-card__item">
               <div class="recommen-card__content">
                 <img src="./img/recommen-house1.jpg" class="recommen-card__img" alt="img" />
-                <div class="recommen-card-position">
+                <div class="recommen-card-position recommen-card-position--one">
                   <svg class="recommen-card-position__svg">
                     <use href="./img/sprite/sprite.svg#icon-recommen-fire"></use>
                   </svg>
-                  <p class="recommen-card-position__text">Popular</p>
+                  <p class="recommen-card-position__text recommen-card-position__text--red">Popular</p>
                 </div>
               </div>
               <div class="recommen-card__first-content">
@@ -257,11 +268,11 @@
             <li class="recommen-card__item">
               <div class="recommen-card__content">
                 <img src="./img/recommen-house2.jpg" class="recommen-card__img" alt="img" />
-                <div class="recommen-card-position recommen-card-position--blue">
+                <div class="recommen-card-position recommen-card-position--two">
                   <svg class="recommen-card-position__svg">
                     <use href="./img/sprite/sprite.svg#icon-recommen-house"></use>
                   </svg>
-                  <p class="recommen-card-position__text recommen-card-position__text--blue">
+                  <p class="recommen-card-position__text recommen-card-position__text--blue ">
                     New house
                   </p>
                 </div>
@@ -282,7 +293,7 @@
             <li class="recommen-card__item">
               <div class="recommen-card__content">
                 <img src="./img/recommen-house3.jpg" class="recommen-card__img" alt="img" />
-                <div class="recommen-card-position recommen-card-position--green">
+                <div class="recommen-card-position recommen-card-position--three">
                   <svg class="recommen-card-position__svg">
                     <use href="./img/sprite/sprite.svg#icon-recommen-wallet"></use>
                   </svg>
@@ -306,11 +317,11 @@
             <li class="recommen-card__item">
               <div class="recommen-card__content">
                 <img src="./img/recommen-house4.jpg" class="recommen-card__img" alt="img" />
-                <div class="recommen-card-position">
+                <div class="recommen-card-position recommen-card-position--four">
                   <svg class="recommen-card-position__svg">
                     <use href="./img/sprite/sprite.svg#icon-recommen-fire"></use>
                   </svg>
-                  <p class="recommen-card-position__text">Popular</p>
+                  <p class="recommen-card-position__text recommen-card-position__text--red">Popular</p>
                 </div>
               </div>
               <div class="recommen-card__first-content">
@@ -334,7 +345,7 @@
         <div class="container">
           <div class="sell__position">
             <div class="sell-leftblock">
-              <p class="sell-leftblock__text">Ready to Sell!</p>
+              <p class="gold-text">Ready to Sell!</p>
               <h2 class="sell-leftblock__title">Let’s tour and see our house!</h2>
               <p class="sell-leftblock__under-text">
                 Houses recommended by our partners that have been curated to become the home of your
@@ -372,10 +383,12 @@
               <span class="sell-leftblock__span"></span>
 
               <div class="sell-leftblock-down">
-                <img src="./img/recommen-portret1.png" class="sell-leftblock-down__img" alt="img" />
+                <div class="sell-leftblock-down__block">
+                  <img src="./img/recommen-portret1.png" class="sell-leftblock-down__img" alt="img" />
                 <div>
                   <h3 class="sell-leftblock-down__title">Dianne Russell</h3>
                   <p class="sell-leftblock-down__text">Manager Director</p>
+                </div>
                 </div>
                 <button class="sell-leftblock-down__btn" type="button">
                   <svg width="24" height="24" class="sell-leftblock-down__svg">
@@ -387,43 +400,37 @@
             </div>
 
             <div class="sell-rightblock">
-              <ul class="sell-rightblock__list">
-                <li class="sell-rightblock__item">
+              
                   <img
                     src="./img/sell-rightblock1.jpg"
                     class="sell-rightblock__img sell-rightblock__img--bed"
                     alt="img"
                   />
-                </li>
-                <li class="sell-rightblock__item">
+              
                   <img
                     src="./img/sell-rightblock2.jpg"
                     class="sell-rightblock__img sell-rightblock__img--vase"
                     alt="img"
                   />
-                </li>
-                <li class="sell-rightblock__item">
+               
                   <img
                     src="./img/sell-rightblock3.jpg"
                     class="sell-rightblock__img sell-rightblock__img--main"
                     alt="img"
                   />
-                </li>
-                <li class="sell-rightblock__item">
+               
                   <img
                     src="./img/sell-rightblock4.jpg"
                     class="sell-rightblock__img sell-rightblock__img--room"
                     alt="img"
                   />
-                </li>
-                <li class="sell-rightblock__item">
+              
                   <a class="sell-rightblock__link" href="#">
                     <svg class="sell-rightblock__svg" width="20" height="20">
                       <use href="./img/sprite/sprite.svg#icon-sell-play"></use>
                     </svg>
                   </a>
-                </li>
-              </ul>
+               
             </div>
 
             <img src="./img/sell-orange.png" class="sell__img sell__img--orange" alt="orange" />
@@ -435,7 +442,7 @@
       <!-- REVIEW -->
       <section class="review">
         <div class="container">
-          <p class="review__text">See Our Review</p>
+          <p class="review__text  gold-text">See Our Review</p>
           <h2 class="review__title">What Our User Say About Us</h2>
 
           <ul class="review-list">
@@ -540,7 +547,7 @@
             <img class="partner__img" src="./img/partner-blue.png" alt="png" />
             <img class="partner__img partner__img--green" src="./img/partner-green.png" alt="png" />
             <div class="partner__content">
-              <p class="partner__text">See tips and trick from our partnership</p>
+              <p class="partner__text gold-text">See tips and trick from our partnership</p>
               <h2 class="partner__title">Find out more about selling and buying homes</h2>
               <button class="partner__btn" type="button">More Artikel</button>
             </div>

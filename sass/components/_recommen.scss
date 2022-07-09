@@ -1,33 +1,32 @@
 .recommen {
-  padding-bottom: 120px;
   &__flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
   }
 
   &__text {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.28;
-    text-transform: capitalize;
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
+    // font-style: normal;
+    // font-weight: 500;
+    // font-size: 14px;
+    // line-height: 1.28;
+    // text-transform: capitalize;
+    // display: flex;
+    // align-items: center;
+    // margin-bottom: 12px;
 
-    color: $gold-text;
+    // color: $gold-text;
 
-    &::before {
-      content: '';
-      width: 32px;
-      height: 1px;
+    // &::before {
+    //   content: '';
+    //   width: 32px;
+    //   height: 1px;
 
-      margin-right: 8px;
+    //   margin-right: 8px;
 
-      border: 1px solid $gold-text;
-    }
+    //   border: 1px solid $gold-text;
+    // }
   }
 
   &__title {
@@ -44,6 +43,7 @@
 .recommen-list {
   display: flex;
   align-items: center;
+  margin-right: 136px;
 
   &__item {
     &:not(:last-child) {
@@ -51,7 +51,52 @@
     }
   }
 
-  &__btn {
+  // &__btn {
+  //   font-style: normal;
+  //   font-weight: 500;
+  //   font-size: 18px;
+  //   line-height: 1.56;
+  //   border: 1px solid #e0e3eb;
+  //   border-radius: 32px;
+  //   padding: 12px 24px;
+  //   display: flex;
+  //   align-items: center;
+  //   cursor: pointer;
+
+  //   transform: scale(1);
+  //   transition: transform 300ms linear, background-color 300ms linear;
+
+  //   background-color: transparent;
+  //   color: $gray-text;
+
+  //   &:hover,
+  //   &:focus {
+  //     transform: scale(1.1);
+  //     color: $accent;
+  //     background-color: $accent-light;
+
+  //     .recommen-list__svg {
+  //       fill: $accent;
+  //     }
+  //   }
+  // }
+}
+
+.label-radiobtn {
+  &__input {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
+  &__span {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -62,22 +107,13 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+  }
+  .label-radiobtn__input:checked ~ .label-radiobtn__span {
+    color: $accent;
+    background-color: $accent-light;
 
-    transform: scale(1);
-    transition: transform 300ms linear, background-color 300ms linear;
-
-    background-color: transparent;
-    color: $gray-text;
-
-    &:hover,
-    &:focus {
-      transform: scale(1.1);
-      color: $accent;
-      background-color: $accent-light;
-
-      .recommen-list__svg {
-        fill: $accent;
-      }
+    .label-radiobtn__svg {
+      fill: $accent;
     }
   }
 
@@ -89,10 +125,13 @@
   }
 }
 
+.recommen-form {
+  display: flex;
+}
 .recommen-list-btn {
   display: flex;
   align-items: center;
-
+  margin-left: auto;
   &__item {
     &:not(:last-child) {
       margin-right: 16px;
@@ -211,14 +250,19 @@
   display: flex;
   align-items: center;
 
-  background-color: $red-light;
+  &--one {
+    background-color: $red-light;
+  }
 
-  &--blue {
+  &--two {
     background-color: $blue-light;
   }
 
-  &--green {
+  &--three {
     background-color: $accent-light;
+  }
+  &--four {
+    background-color: $red-light;
   }
 
   &__svg {
@@ -233,7 +277,9 @@
     font-size: 14px;
     line-height: 1.28;
 
-    color: $red-text;
+    &--red {
+      color: $red-text;
+    }
 
     &--blue {
       color: $blue-text;
