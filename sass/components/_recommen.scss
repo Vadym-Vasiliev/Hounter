@@ -6,29 +6,6 @@
     margin-bottom: 40px;
   }
 
-  &__text {
-    // font-style: normal;
-    // font-weight: 500;
-    // font-size: 14px;
-    // line-height: 1.28;
-    // text-transform: capitalize;
-    // display: flex;
-    // align-items: center;
-    // margin-bottom: 12px;
-
-    // color: $gold-text;
-
-    // &::before {
-    //   content: '';
-    //   width: 32px;
-    //   height: 1px;
-
-    //   margin-right: 8px;
-
-    //   border: 1px solid $gold-text;
-    // }
-  }
-
   &__title {
     font-style: normal;
     font-weight: 600;
@@ -107,6 +84,19 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    transform: scale(1);
+    transition: transform 250ms linear, color 250ms linear, background-color 250ms linear;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+      color: $accent;
+      background-color: $accent-light;
+
+      .recommen-list__svg {
+        fill: $accent;
+      }
+    }
   }
   .label-radiobtn__input:checked ~ .label-radiobtn__span {
     color: $accent;

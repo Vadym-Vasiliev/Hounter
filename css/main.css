@@ -706,6 +706,16 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
+  transform: scale(1);
+  transition: transform 250ms linear, color 250ms linear, background-color 250ms linear;
+}
+.label-radiobtn__span:hover, .label-radiobtn__span:focus {
+  transform: scale(1.05);
+  color: #047857;
+  background-color: #d1fae5;
+}
+.label-radiobtn__span:hover .recommen-list__svg, .label-radiobtn__span:focus .recommen-list__svg {
+  fill: #047857;
 }
 .label-radiobtn .label-radiobtn__input:checked ~ .label-radiobtn__span {
   color: #047857;
