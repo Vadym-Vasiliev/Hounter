@@ -469,7 +469,7 @@ body {
 
 .hero__position {
   position: relative;
-  top: -136px;
+  margin-top: -136px;
   display: flex;
   justify-content: space-between;
 }
@@ -711,8 +711,6 @@ body {
 }
 .label-radiobtn__span:hover, .label-radiobtn__span:focus {
   transform: scale(1.05);
-  color: #047857;
-  background-color: #d1fae5;
 }
 .label-radiobtn__span:hover .recommen-list__svg, .label-radiobtn__span:focus .recommen-list__svg {
   fill: #047857;
