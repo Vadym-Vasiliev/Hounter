@@ -3,6 +3,10 @@
   position: relative;
   overflow: hidden;
 
+  @include mobile {
+    padding-bottom: 180px;
+  }
+
   &__text {
     display: flex;
     flex-direction: column;
@@ -22,6 +26,10 @@
     margin-bottom: 40px;
 
     color: $secondary-text;
+
+    @include mobile {
+      margin-bottom: 0;
+    }
   }
 
   &__span {
@@ -65,16 +73,35 @@
   display: flex;
   justify-content: center;
 
+  @include tablet {
+    flex-direction: column;
+    gap: 140px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    gap: 80px;
+  }
+
   &__item {
     position: relative;
     &:not(:last-child) {
       margin-right: 56px;
+
+      @include mobile {
+        margin-right: 0;
+      }
     }
   }
 
   &__img {
     width: 740px;
     height: 400px;
+
+    @include mobile {
+      width: 440px;
+      object-fit: contain;
+    }
   }
 }
 
@@ -90,6 +117,10 @@
   box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
   border-radius: 16px;
 
+  @include mobile {
+    width: 370px;
+    padding: 16px;
+  }
   &__title {
     font-style: normal;
     font-weight: 600;
