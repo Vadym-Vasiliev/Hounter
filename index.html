@@ -24,35 +24,44 @@
               Hounter
             </a>
 
-            <ul class="header-list">
-              <li class="header-list__item">
-                <a class="header-list__link" href="#">About Us</a>
-              </li>
-              <li class="header-list__item">
-                <a class="header-list__link" href="#">Article</a>
-              </li>
-              <li class="header-list__item width__submenu">
-                <a class="header-list__link" href="#">
-                  Property
-                  <svg class="header-list__svg">
-                    <use href="./img/sprite/sprite.svg#icon-arrow-down"></use>
-                  </svg>
-                </a>
-                <ul class="header-menu">
-                  <li class="header-menu__item">
-                    <a class="header-menu__link" href="#">Property 1</a>
-                  </li>
-                  <li class="header-menu__item">
-                    <a class="header-menu__link" href="#">Property 2</a>
-                  </li>
-                  <li class="header-menu__item">
-                    <a class="header-menu__link" href="#">Property 3</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+            <button class="menu-btn" type="button" data-menu-button>
+              <svg class="menu-btn__svg" width="80" height="80">
+                <use class="menu-btn__svg-burger" href="./img/sprite/sprite.svg#icon-burger"></use>
+                <use class="menu-btn__svg-cross" href="./img/sprite/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
 
-            <button class="header__btn" type="button">Sign Up!</button>
+            <div class="menu-box" data-menu>
+              <ul class="header-list">
+                <li class="header-list__item">
+                  <a class="header-list__link" href="#">About Us</a>
+                </li>
+                <li class="header-list__item">
+                  <a class="header-list__link" href="#">Article</a>
+                </li>
+                <li class="header-list__item width__submenu">
+                  <a class="header-list__link" href="#">
+                    Property
+                    <svg class="header-list__svg">
+                      <use href="./img/sprite/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="header-menu">
+                    <li class="header-menu__item">
+                      <a class="header-menu__link" href="#">Property 1</a>
+                    </li>
+                    <li class="header-menu__item">
+                      <a class="header-menu__link" href="#">Property 2</a>
+                    </li>
+                    <li class="header-menu__item">
+                      <a class="header-menu__link" href="#">Property 3</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <button class="header__btn" type="button">Sign Up!</button>
+            </div>
           </div>
 
           <img class="header__img header__img--blue" src="./img/hero-blue.png" alt="blue" />
@@ -64,7 +73,7 @@
     <!-- MAIN -->
     <main>
       <!-- HERO -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <div class="hero__position">
             <div class="hero-leftblock">
@@ -176,10 +185,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- RECOMMENDATION -->
-      <section class="recommen">
+      <!-- <section class="recommen">
         <div class="container">
           <p class="recommen__text gold-text">Our Recommendation</p>
 
@@ -338,10 +347,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- SELL -->
-      <section class="sell">
+      <!-- <section class="sell">
         <div class="container">
           <div class="sell__position">
             <div class="sell-leftblock">
@@ -437,10 +446,10 @@
             <img src="./img/sell-yellow.png" class="sell__img sell__img--yellow" alt="yellow" />
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- REVIEW -->
-      <section class="review">
+      <!-- <section class="review">
         <div class="container">
           <p class="review__text  gold-text">See Our Review</p>
           <h2 class="review__title">What Our User Say About Us</h2>
@@ -538,10 +547,10 @@
 
           <span class="review__span"></span>
         </div>
-      </section>
+      </section> -->
 
       <!-- PARTNER -->
-      <section class="partner">
+      <!-- <section class="partner">
         <div class="container">
           <div class="partner__position">
             <img class="partner__img" src="./img/partner-blue.png" alt="png" />
@@ -661,10 +670,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- SUBSCRIBE -->
-      <section class="subscribe">
+      <!-- <section class="subscribe">
         <div class="container">
           <div class="subscribe__block">
             <div class="subscribe-leftblock">
@@ -742,11 +751,11 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- FOOTER -->
-    <section class="footer">
+    <!-- <section class="footer">
       <div class="container">
         <div class="footer__block">
           <img class="footer__img" src="./img/footer-blue.png" alt="png" />
@@ -840,8 +849,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <script src="./js/header-menu.js" type="module"></script>
+    <script src="./js/burger-menu.js" type="module"></script>
   </body>
 </html>

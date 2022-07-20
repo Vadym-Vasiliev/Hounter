@@ -286,12 +286,30 @@ body {
   color: #626687;
   background-color: #ffffff;
 }
+body.menu-open {
+  overflow: hidden;
+}
 
 .container {
-  width: 1240px;
+  max-width: 1240px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
 }
 
 .visually-hidden {
@@ -352,6 +370,11 @@ body {
 .header__link:hover, .header__link:focus {
   transform: scale(1.1);
 }
+@media screen and (max-width: 767px) {
+  .header__link {
+    font-size: 24px;
+  }
+}
 .header__logo {
   width: 36px;
   height: 36px;
@@ -375,6 +398,13 @@ body {
 .header__btn:hover, .header__btn:focus {
   transform: scale(1.1);
 }
+@media screen and (max-width: 767px) {
+  .header__btn {
+    font-size: 22px;
+    max-width: 200px;
+    margin-left: 0;
+  }
+}
 .header__img {
   position: absolute;
   top: -100px;
@@ -397,8 +427,23 @@ body {
 
 .header-list {
   display: flex;
-  align-items: center;
-  margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .header-list {
+    align-items: center;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-list {
+    align-items: center;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-list {
+    flex-direction: column;
+  }
 }
 .header-list__item {
   position: relative;
@@ -421,6 +466,18 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   color: #f0f3fd;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-list__link {
+    color: #047857;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-list__link {
+    font-size: 32px;
+    display: inline-block;
+    color: #047857;
+  }
+}
 .header-list__link:hover, .header-list__link:focus {
   transform: scale(1.1);
   color: #047857;
@@ -442,11 +499,19 @@ body {
   top: 45px;
   padding: 10px;
   border-radius: 4px;
-  width: 100%;
   opacity: 0;
   pointer-events: none;
   transition: opacity 300ms linear;
   background-color: #d1fae5;
+}
+@media screen and (max-width: 767px) {
+  .header-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 55px;
+    width: 200px;
+  }
 }
 .header-menu.active {
   opacity: 1;
@@ -465,6 +530,83 @@ body {
 }
 .header-menu__link:hover, .header-menu__link:focus {
   transform: scale(1.1);
+}
+@media screen and (max-width: 767px) {
+  .header-menu__link {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateX(0);
+    transition: transform 250ms linear;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-left: 1px solid rgba(204, 204, 204, 0.2);
+    background-color: #ffffff;
+  }
+  .menu-box.is-open {
+    opacity: 1;
+    left: 75%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-box {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-box {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menu-btn {
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+  transform: scale(1);
+  transition: transform 250ms linear;
+  background-color: transparent;
+}
+.menu-btn:hover, .menu-btn:focus {
+  transform: scale(1.1);
+}
+.menu-btn:hover .menu-btn__svg, .menu-btn:focus .menu-btn__svg {
+  fill: #047857;
+}
+.menu-btn__svg {
+  fill: #1b1c57;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-btn {
+    display: none;
+  }
+}
+.menu-btn__svg-cross {
+  display: none;
+}
+.menu-btn.is-open .menu-btn__svg-cross {
+  display: block;
+}
+.menu-btn.is-open .menu-btn__svg-burger {
+  display: none;
 }
 
 .hero__position {

@@ -27,6 +27,10 @@
     &:focus {
       transform: scale(1.1);
     }
+
+    @include mobile {
+      font-size: 24px;
+    }
   }
 
   &__logo {
@@ -56,6 +60,12 @@
     &:focus {
       transform: scale(1.1);
     }
+
+    @include mobile {
+      font-size: 22px;
+      max-width: 200px;
+      margin-left: 0;
+    }
   }
 
   &__img {
@@ -81,8 +91,20 @@
 
 .header-list {
   display: flex;
-  align-items: center;
-  margin-left: auto;
+
+  @include desktop {
+    align-items: center;
+    margin-left: auto;
+  }
+
+  @include tablet {
+    align-items: center;
+    margin-left: auto;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
 
   &__item {
     position: relative;
@@ -106,6 +128,16 @@
 
     background-color: rgba(255, 255, 255, 0.1);
     color: #f0f3fd;
+
+    @include tablet {
+      color: $accent;
+    }
+
+    @include mobile {
+      font-size: 32px;
+      display: inline-block;
+      color: $accent;
+    }
 
     &:hover,
     &:focus {
@@ -133,20 +165,26 @@
   top: 45px;
   padding: 10px;
   border-radius: 4px;
-  width: 100%;
+
   opacity: 0;
   pointer-events: none;
   transition: opacity 300ms linear;
 
   background-color: $accent-light;
 
+  @include mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 55px;
+    width: 200px;
+  }
+
   &.active {
     opacity: 1;
     pointer-events: all;
   }
 
-  &__item {
-  }
   &__link {
     font-style: normal;
     font-weight: 600;
@@ -163,5 +201,85 @@
     &:focus {
       transform: scale(1.1);
     }
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+}
+
+.menu-box {
+  @include mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateX(0);
+    transition: transform 250ms linear;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-left: 1px solid rgb(#ccc, 0.2);
+    background-color: $main-bgc;
+    &.is-open {
+      opacity: 1;
+      left: 75%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menu-btn {
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+  transform: scale(1);
+  transition: transform 250ms linear;
+
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+
+    .menu-btn__svg {
+      fill: $accent;
+    }
+  }
+
+  &__svg {
+    fill: $secondary-text;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+
+  &__svg-cross {
+    display: none;
+
+    .menu-btn.is-open & {
+      display: block;
+    }
+  }
+
+  &.is-open &__svg-burger {
+    display: none;
   }
 }
