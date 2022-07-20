@@ -3,6 +3,11 @@
   padding-top: 180px;
   overflow: hidden;
 
+  @include mobile {
+    padding-bottom: 520px;
+    padding-top: 60px;
+  }
+
   &__position {
     position: relative;
     display: flex;
@@ -15,11 +20,21 @@
     &--orange {
       top: -250px;
       right: -200px;
+
+      @include mobile {
+        right: -500px;
+        z-index: -1;
+      }
     }
 
     &--yellow {
       top: -150px;
       right: -300px;
+
+      @include mobile {
+        right: -400px;
+        z-index: -1;
+      }
     }
   }
 }
@@ -28,6 +43,11 @@
   width: 524px;
   margin-left: 40px;
   margin-right: 148px;
+
+  @include tablet {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   &__text {
     font-style: normal;
@@ -61,6 +81,10 @@
     margin-bottom: 16px;
 
     color: $secondary-text;
+
+    @include tablet {
+      width: 240px;
+    }
   }
 
   &__under-text {
@@ -71,6 +95,10 @@
     opacity: 0.75;
     margin-bottom: 16px;
     width: 413px;
+
+    @include tablet {
+      width: 240px;
+    }
   }
 
   &__detail-text {
@@ -105,6 +133,10 @@
     align-items: center;
     width: calc((100% - 54px - 54px) / 2);
     margin: 15px;
+
+    @include tablet {
+      width: calc((100% - 54px - 54px) / 1);
+    }
   }
 
   &__svg {
@@ -115,6 +147,11 @@
 .sell-leftblock-down {
   display: flex;
   align-items: center;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
+  }
 
   &__block {
     display: flex;
@@ -184,6 +221,14 @@
     right: 0;
     border-radius: 4px;
 
+    @include tablet {
+      top: 80px;
+    }
+
+    @include mobile {
+      top: 580px;
+      width: 420px;
+    }
     &--main {
       z-index: -1;
     }
@@ -193,6 +238,15 @@
       right: 232px;
       width: 296px;
       height: 168px;
+
+      @include tablet {
+        top: 371px;
+      }
+
+      @include mobile {
+        top: 800px;
+        width: 220px;
+      }
     }
 
     &--vase {
@@ -200,6 +254,14 @@
       right: 124px;
       width: 96px;
       height: 80px;
+
+      @include tablet {
+        top: 459px;
+      }
+
+      @include mobile {
+        top: 888px;
+      }
     }
 
     &--room {
@@ -207,6 +269,13 @@
       right: 20px;
       width: 96px;
       height: 80px;
+
+      @include tablet {
+        top: 459px;
+      }
+      @include mobile {
+        top: 888px;
+      }
     }
   }
 
@@ -230,6 +299,15 @@
     &:focus {
       transform: scale(1.1);
       background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    @include tablet {
+      top: 264px;
+    }
+
+    @include mobile {
+      right: 185px;
+      top: 740px;
     }
   }
 }

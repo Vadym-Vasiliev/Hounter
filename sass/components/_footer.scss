@@ -27,6 +27,11 @@
     &--green {
       top: -150px;
       right: -200px;
+
+      @include mobile {
+        top: 100px;
+        right: -400px;
+      }
     }
   }
 }
