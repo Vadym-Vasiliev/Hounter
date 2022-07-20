@@ -2,6 +2,15 @@
   padding-top: 220px;
   padding-bottom: 120px;
 
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @include mobile {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   &__position {
     position: relative;
   }
@@ -24,6 +33,17 @@
   &__flex {
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      gap: 500px;
+    }
   }
 
   &__text {
@@ -73,7 +93,11 @@
 }
 
 .partner-list {
+  @include mobile {
+    width: 440px;
+  }
   &__item {
+    max-width: 400px;
     &:not(:last-child) {
       margin-bottom: 40px;
     }
@@ -84,19 +108,37 @@
   display: flex;
   width: 572px;
 
+  @include mobile {
+    width: 440px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
   &__time {
     display: flex;
     align-items: center;
+    @include mobile {
+      justify-content: center;
+    }
   }
 
   &__flex {
     margin-left: 32px;
+
+    @include mobile {
+      margin-left: 0;
+    }
   }
 
   &__flex-name {
     display: flex;
     align-items: center;
     margin-bottom: 12px;
+
+    @include mobile {
+      justify-content: center;
+    }
   }
 
   &__img-first {
@@ -127,6 +169,11 @@
     margin-bottom: 16px;
 
     color: $secondary-text;
+
+    @include mobile {
+      text-align: center;
+      max-width: 440px;
+    }
   }
 
   &__svg {
@@ -147,15 +194,29 @@
   width: 572px;
   height: 524px;
   z-index: 1;
+
+  @include mobile {
+    width: 440px;
+  }
 }
 
 .partner-rightblock {
   width: 560px;
   height: 480px;
+
+  @include mobile {
+    width: 440px;
+  }
   &__img-first {
     width: 560px;
     height: 280px;
     margin-bottom: 24px;
+
+    @include mobile {
+      width: 440px;
+      object-fit: contain;
+      margin-bottom: 12px;
+    }
   }
 
   &__name {
@@ -196,6 +257,10 @@
     line-height: 1.71;
     opacity: 0.75;
     margin-bottom: 16px;
+
+    @include mobile {
+      max-width: 440px;
+    }
   }
 
   &__time-text {
