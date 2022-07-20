@@ -3,16 +3,26 @@
   padding-bottom: 60px;
   overflow: hidden;
 
+  @include mobile {
+    padding-top: 60px;
+  }
+
   &__block {
     position: relative;
     display: flex;
     justify-content: space-between;
+
+    @include mobile {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
 
   &__img {
     position: absolute;
     top: -180px;
     right: -500px;
+    z-index: -1;
 
     &--green {
       top: -150px;
@@ -24,6 +34,10 @@
 .footer-leftblock {
   width: 320px;
 
+  @include mobile {
+    margin-bottom: 25px;
+    text-align: center;
+  }
   &__link {
     font-style: normal;
     font-weight: 700;
@@ -55,11 +69,19 @@
     line-height: 1.71;
     opacity: 0.75;
     margin-bottom: 24px;
+
+    @include tablet {
+      max-width: 200px;
+    }
   }
 
   &__list {
     display: flex;
     align-items: center;
+
+    @include mobile {
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -97,11 +119,24 @@
   z-index: 1;
   &__list {
     display: flex;
+    @include tablet {
+      margin-right: 30px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
   }
 
   &__item {
     &:not(:last-child) {
       margin-right: 87px;
+
+      @include mobile {
+        margin-right: 0;
+      }
     }
   }
   &__text {
@@ -118,6 +153,9 @@
 
 .footer-second-list {
   &__item {
+    @include tablet {
+      width: 101px;
+    }
     &:not(:last-child) {
       margin-bottom: 18px;
     }
