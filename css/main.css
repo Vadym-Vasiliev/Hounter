@@ -1531,6 +1531,7 @@ body.menu-open {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 1;
 }
 
 .subscribe-leftblock__img {
@@ -1538,21 +1539,55 @@ body.menu-open {
   top: 38px;
   left: 24px;
   width: 85px;
+  z-index: -1;
+}
+@media screen and (max-width: 767px) {
+  .subscribe-leftblock__img {
+    display: none;
+  }
 }
 .subscribe-leftblock__img--man {
   top: 71px;
   left: 184px;
   width: 40px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe-leftblock__img--man {
+    top: 268px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscribe-leftblock__img--man {
+    top: 280px;
+    left: 100px;
+  }
+}
 .subscribe-leftblock__img--girl {
   top: 173px;
   left: 47px;
   width: 40px;
 }
+@media screen and (max-width: 767px) {
+  .subscribe-leftblock__img--girl {
+    left: 0;
+  }
+}
 .subscribe-leftblock__img--house {
   top: 178px;
   left: 175px;
   width: 59px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe-leftblock__img--house {
+    top: 255px;
+    left: 38px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscribe-leftblock__img--house {
+    top: 267px;
+    left: 0;
+  }
 }
 
 .subscribe-centerblock {
@@ -1583,6 +1618,11 @@ body.menu-open {
   margin-bottom: 32px;
   background-color: #ffffff;
 }
+@media screen and (max-width: 767px) {
+  .subscribe-centerblock-form {
+    max-width: 385px;
+  }
+}
 .subscribe-centerblock-form__input {
   padding: 16px 17px;
   width: 303px;
@@ -1593,6 +1633,11 @@ body.menu-open {
   font-size: 14px;
   line-height: 1.57;
   color: #888b97;
+}
+@media screen and (max-width: 767px) {
+  .subscribe-centerblock-form__input {
+    max-width: 200px;
+  }
 }
 .subscribe-centerblock-form__btn {
   font-style: normal;
@@ -1627,21 +1672,60 @@ body.menu-open {
   top: 44px;
   right: 180px;
   width: 74px;
+  z-index: -1;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe-rightblock__img {
+    right: 45px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscribe-rightblock__img {
+    display: none;
+  }
 }
 .subscribe-rightblock__img--girl {
   top: 107px;
   right: 62px;
   width: 36px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe-rightblock__img--girl {
+    top: 140px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscribe-rightblock__img--girl {
+    right: 0;
+  }
+}
 .subscribe-rightblock__img--man {
   top: 143px;
   right: 180px;
   width: 36px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe-rightblock__img--man {
+    top: 269px;
+    right: 62px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscribe-rightblock__img--man {
+    top: 172px;
+    right: 0;
+  }
+}
 .subscribe-rightblock__img--room {
   top: 197px;
   right: 53px;
   width: 55px;
+}
+@media screen and (max-width: 767px) {
+  .subscribe-rightblock__img--room {
+    top: 38px;
+    right: 0;
+  }
 }
 
 .footer {
