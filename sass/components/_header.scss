@@ -87,7 +87,17 @@
 .header-flex {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  @include desktop {
+    justify-content: space-between;
+  }
+
+  @include tablet {
+    gap: 20px;
+  }
+
+  @include mobile {
+    justify-content: space-between;
+  }
 }
 
 .header-list {

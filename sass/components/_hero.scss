@@ -2,8 +2,11 @@
   &__position {
     position: relative;
     margin-top: -136px;
-    display: flex;
-    justify-content: space-between;
+
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -14,6 +17,17 @@
   margin-right: 104px;
   display: inline-block;
   z-index: 3;
+
+  @include tablet {
+    margin-right: 0;
+    padding-top: 0;
+    margin-top: 170px;
+  }
+
+  @include mobile {
+    margin-right: 0;
+    padding-bottom: 0;
+  }
   &__span {
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -61,6 +75,10 @@
 
   background-color: $main-bgc;
 
+  @include mobile {
+    width: 425px;
+  }
+
   &__img-search {
     width: 24px;
     height: 24px;
@@ -78,6 +96,10 @@
     line-height: 1.57;
 
     color: $gray-text;
+
+    @include mobile {
+      width: 270px;
+    }
   }
 
   &__btn {
@@ -99,6 +121,10 @@
     transition: transform 300ms linear;
 
     color: #ffffff;
+
+    @include mobile {
+      margin-left: 0;
+    }
 
     &:hover,
     &:focus {
@@ -142,13 +168,25 @@
   display: inline-block;
   position: absolute;
   top: 0;
-  left: 600px;
+  left: 548px;
 
-  overflow: hidden;
+  @include desktop {
+    overflow: hidden;
+  }
+
+  @include mobile {
+    display: none;
+  }
 
   &__img {
     width: 720px;
     height: 720px;
+
+    @include tablet {
+      width: 200px;
+      object-fit: cover;
+      border-radius: 0 0 0 10px;
+    }
 
     &--line {
       position: absolute;
@@ -156,6 +194,10 @@
       right: 114px;
       width: 522px;
       height: 343px;
+
+      @include tablet {
+        right: 238px;
+      }
     }
   }
 }
@@ -166,6 +208,10 @@
   left: 48px;
   display: flex;
   align-items: center;
+
+  @include tablet {
+    display: none;
+  }
 
   &__flex {
     display: flex;
