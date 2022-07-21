@@ -52,6 +52,17 @@ body {
   align-items: center;
   margin-left: -40px;
   color: $gold-text;
+  @include tablet {
+    justify-content: center;
+  }
+
+  @include mobile {
+    justify-content: center;
+  }
+
+  &--margin {
+    justify-content: flex-start;
+  }
 
   &::before {
     content: '';

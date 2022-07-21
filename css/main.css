@@ -337,6 +337,19 @@ body.menu-open {
   margin-left: -40px;
   color: #f59e0b;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .gold-text {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .gold-text {
+    justify-content: center;
+  }
+}
+.gold-text--margin {
+  justify-content: flex-start;
+}
 .gold-text::before {
   content: "";
   width: 32px;
@@ -417,6 +430,7 @@ body.menu-open {
 .header__img--green {
   left: -50px;
   top: -200px;
+  z-index: -1;
 }
 
 .header-flex {
@@ -800,11 +814,34 @@ body.menu-open {
   width: 56px;
 }
 
+@media screen and (max-width: 767px) {
+  .recommen {
+    padding-top: 60px;
+  }
+}
 .recommen__flex {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .recommen__flex {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .recommen__flex {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .recommen__flex {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
 }
 .recommen__title {
   font-style: normal;
@@ -820,8 +857,26 @@ body.menu-open {
   align-items: center;
   margin-right: 136px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .recommen-list {
+    margin-right: 0;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .recommen-list {
+    margin-right: 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 .recommen-list__item:not(:last-child) {
   margin-right: 56px;
+}
+@media screen and (max-width: 767px) {
+  .recommen-list__item:not(:last-child) {
+    margin-right: 0;
+  }
 }
 
 .label-radiobtn__input {
@@ -873,11 +928,33 @@ body.menu-open {
 .recommen-form {
   display: flex;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .recommen-form {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .recommen-form {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 
 .recommen-list-btn {
   display: flex;
   align-items: center;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .recommen-list-btn {
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .recommen-list-btn {
+    margin-right: auto;
+  }
 }
 .recommen-list-btn__item:not(:last-child) {
   margin-right: 16px;
@@ -908,23 +985,54 @@ body.menu-open {
   display: flex;
   justify-content: space-around;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .recommen-card {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .recommen-card {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+}
 .recommen-card__item {
   min-width: 340px;
   transform: scale(1);
   transition: transform 300ms linear;
 }
-.recommen-card__item:not(:last-child) {
-  margin-right: 40px;
+@media screen and (min-width: 1200px) {
+  .recommen-card__item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .recommen-card__item {
+    width: calc((100% - 30px - 30px) / 2);
+    margin: 15px;
+  }
 }
 .recommen-card__item:hover, .recommen-card__item:focus {
   transform: scale(1.05);
 }
+.recommen-card__img {
+  width: 349px;
+}
 .recommen-card__content {
   position: relative;
+  max-width: 349px;
 }
 .recommen-card__first-content {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+@media screen and (max-width: 767px) {
+  .recommen-card__first-content {
+    text-align: center;
+  }
 }
 .recommen-card__title {
   font-style: normal;
@@ -943,6 +1051,12 @@ body.menu-open {
 .recommen-card__second-content {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .recommen-card__second-content {
+    align-items: center;
+    justify-content: center;
+  }
 }
 .recommen-card__under-img {
   width: 40px;
@@ -1013,7 +1127,7 @@ body.menu-open {
 @media screen and (max-width: 767px) {
   .sell {
     padding-bottom: 520px;
-    padding-top: 60px;
+    padding-top: 120px;
   }
 }
 .sell__position {

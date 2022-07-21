@@ -1,9 +1,28 @@
 .recommen {
+  @include mobile {
+    padding-top: 60px;
+  }
   &__flex {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
     margin-bottom: 40px;
+
+    @include desktop {
+      align-items: center;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
   }
 
   &__title {
@@ -22,9 +41,23 @@
   align-items: center;
   margin-right: 136px;
 
+  @include tablet {
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  @include mobile {
+    margin-right: 0;
+    flex-direction: column;
+    gap: 20px;
+  }
   &__item {
     &:not(:last-child) {
       margin-right: 56px;
+
+      @include mobile {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -85,11 +118,29 @@
 
 .recommen-form {
   display: flex;
+
+  @include tablet {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .recommen-list-btn {
   display: flex;
   align-items: center;
   margin-left: auto;
+
+  @include tablet {
+    margin-right: auto;
+  }
+
+  @include mobile {
+    margin-right: auto;
+  }
   &__item {
     &:not(:last-child) {
       margin-right: 16px;
@@ -129,12 +180,31 @@
   display: flex;
   justify-content: space-around;
 
+  @include tablet {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
   &__item {
     min-width: 340px;
     transform: scale(1);
     transition: transform 300ms linear;
     &:not(:last-child) {
-      margin-right: 40px;
+      @include desktop {
+        margin-right: 40px;
+      }
+    }
+
+    @include tablet {
+      width: calc((100% - 30px - 30px) / 2);
+      margin: 15px;
     }
 
     &:hover,
@@ -143,13 +213,21 @@
     }
   }
 
+  &__img {
+    width: 349px;
+  }
   &__content {
     position: relative;
+    max-width: 349px;
   }
 
   &__first-content {
     padding-top: 24px;
     padding-bottom: 24px;
+
+    @include mobile {
+      text-align: center;
+    }
   }
 
   &__title {
@@ -173,6 +251,11 @@
   &__second-content {
     display: flex;
     align-items: center;
+
+    @include mobile {
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__under-img {
