@@ -2,6 +2,7 @@
   @include mobile {
     padding-top: 60px;
   }
+
   &__flex {
     display: flex;
     justify-content: space-between;
@@ -25,6 +26,22 @@
     }
   }
 
+  &__text {
+    //animation
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(-100%);
+
+    &--animation {
+      opacity: 1;
+      transition: transform 500ms linear, opacity 500ms linear;
+      transform: translateX(0);
+    }
+
+    //
+  }
+
   &__title {
     font-style: normal;
     font-weight: 600;
@@ -33,6 +50,20 @@
     text-transform: capitalize;
 
     color: $secondary-text;
+
+    //animation
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(-100%);
+
+    &--animation {
+      opacity: 1;
+      transition: transform 500ms linear, opacity 500ms linear;
+      transform: translateX(0);
+    }
+
+    //
   }
 }
 
@@ -51,6 +82,21 @@
     flex-direction: column;
     gap: 20px;
   }
+
+  //animation
+
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateY(-100%);
+
+  &__animation {
+    opacity: 1;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateY(0);
+  }
+
+  //
+
   &__item {
     &:not(:last-child) {
       margin-right: 56px;
@@ -141,6 +187,21 @@
   @include mobile {
     margin-right: auto;
   }
+
+  //animation
+
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(100%);
+
+  &__animation {
+    opacity: 1;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(0);
+  }
+
+  //
+
   &__item {
     &:not(:last-child) {
       margin-right: 16px;
@@ -211,6 +272,49 @@
     &:focus {
       transform: scale(1.05);
     }
+
+    //animation
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      opacity: 0;
+      transition: transform 500ms linear, opacity 500ms linear;
+      transform: translateX(-100%);
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      opacity: 0;
+      transition: transform 500ms linear, opacity 500ms linear;
+      transform: translateX(100%);
+    }
+
+    &--animation {
+      &:nth-child(1) {
+        opacity: 1;
+        transition: transform 500ms linear, opacity 500ms linear;
+        transform: translateX(0);
+      }
+      &:nth-child(2) {
+        opacity: 1;
+        transition: transform 500ms linear, opacity 500ms linear;
+        transform: translateX(0);
+        transition-delay: 0.2s;
+      }
+      &:nth-child(3) {
+        opacity: 1;
+        transition: transform 500ms linear, opacity 500ms linear;
+        transform: translateX(0);
+        transition-delay: 0.2s;
+      }
+      &:nth-child(4) {
+        opacity: 1;
+        transition: transform 500ms linear, opacity 500ms linear;
+        transform: translateX(0);
+      }
+    }
+
+    //
   }
 
   &__img {
