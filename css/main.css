@@ -662,9 +662,6 @@ body.menu-open {
   margin-right: 104px;
   display: inline-block;
   z-index: 3;
-  opacity: 0;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(-100%);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-leftblock {
@@ -678,11 +675,6 @@ body.menu-open {
     margin-right: 0;
     padding-bottom: 0;
   }
-}
-.hero-leftblock__animation {
-  opacity: 1;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(0);
 }
 .hero-leftblock__span {
   color: white;
@@ -807,9 +799,6 @@ body.menu-open {
   position: absolute;
   top: 0;
   left: 548px;
-  opacity: 0;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(100%);
 }
 @media screen and (min-width: 1200px) {
   .hero-rightblock {
@@ -820,11 +809,6 @@ body.menu-open {
   .hero-rightblock {
     display: none;
   }
-}
-.hero-rightblock__animation {
-  opacity: 1;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(0);
 }
 .hero-rightblock__img {
   width: 720px;
@@ -939,16 +923,6 @@ body.menu-open {
     align-items: center;
   }
 }
-.recommen__text {
-  opacity: 0;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(-100%);
-}
-.recommen__text--animation {
-  opacity: 1;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(0);
-}
 .recommen__title {
   font-style: normal;
   font-weight: 600;
@@ -956,23 +930,12 @@ body.menu-open {
   line-height: 1.25;
   text-transform: capitalize;
   color: #1b1c57;
-  opacity: 0;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(-100%);
-}
-.recommen__title--animation {
-  opacity: 1;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(0);
 }
 
 .recommen-list {
   display: flex;
   align-items: center;
   margin-right: 136px;
-  opacity: 0;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateY(-100%);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .recommen-list {
@@ -986,11 +949,6 @@ body.menu-open {
     flex-direction: column;
     gap: 20px;
   }
-}
-.recommen-list__animation {
-  opacity: 1;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateY(0);
 }
 .recommen-list__item:not(:last-child) {
   margin-right: 56px;
@@ -1067,9 +1025,6 @@ body.menu-open {
   display: flex;
   align-items: center;
   margin-left: auto;
-  opacity: 0;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(100%);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .recommen-list-btn {
@@ -1080,11 +1035,6 @@ body.menu-open {
   .recommen-list-btn {
     margin-right: auto;
   }
-}
-.recommen-list-btn__animation {
-  opacity: 1;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(0);
 }
 .recommen-list-btn__item:not(:last-child) {
   margin-right: 16px;
@@ -1147,38 +1097,6 @@ body.menu-open {
 }
 .recommen-card__item:hover, .recommen-card__item:focus {
   transform: scale(1.05);
-}
-.recommen-card__item:nth-child(1), .recommen-card__item:nth-child(2) {
-  opacity: 0;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(-100%);
-}
-.recommen-card__item:nth-child(3), .recommen-card__item:nth-child(4) {
-  opacity: 0;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(100%);
-}
-.recommen-card__item--animation:nth-child(1) {
-  opacity: 1;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(0);
-}
-.recommen-card__item--animation:nth-child(2) {
-  opacity: 1;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(0);
-  transition-delay: 0.2s;
-}
-.recommen-card__item--animation:nth-child(3) {
-  opacity: 1;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(0);
-  transition-delay: 0.2s;
-}
-.recommen-card__item--animation:nth-child(4) {
-  opacity: 1;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(0);
 }
 .recommen-card__img {
   width: 349px;
