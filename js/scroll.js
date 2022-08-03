@@ -1,6 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('.header');
   const hero = document.querySelector('.hero');
+  const animationElements = document.querySelectorAll('[data-animation]');
+
+  const scrollAnimation = () => {
+    let windowCenter = window.innerHeight + window.scrollY;
+    animationElements.forEach(el => {
+      let scrollOffset = el.getBoundingClientRect().top + window.scrollY + el.offsetHeight / 2;
+      const animationDirection = el.getAttribute('data-animation');
+
+      if (windowCenter >= scrollOffset) {
+        el.classList.add(`animation-${animationDirection}`);
+      } else {
+        el.classList.remove(`animation-${animationDirection}`);
+      }
+    });
+  };
 
   const headerFixed = () => {
     let scrollTop = window.scrollY;
@@ -16,8 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   headerFixed();
+  scrollAnimation();
 
   window.addEventListener('scroll', () => {
     headerFixed();
+    scrollAnimation();
   });
 });

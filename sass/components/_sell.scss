@@ -49,6 +49,10 @@
     margin-right: 0;
   }
 
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(-100%);
+
   &__text {
     font-style: normal;
     font-weight: 500;
@@ -215,6 +219,11 @@
   z-index: 1;
   width: 528px;
   height: 459px;
+
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(100%);
+
   &__img {
     position: absolute;
     top: 0;
@@ -310,4 +319,12 @@
       top: 740px;
     }
   }
+}
+
+//animation
+
+.animation-left {
+  opacity: 1;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(0);
 }

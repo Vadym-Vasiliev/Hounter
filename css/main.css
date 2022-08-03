@@ -662,6 +662,9 @@ body.menu-open {
   margin-right: 104px;
   display: inline-block;
   z-index: 3;
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(-100%);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-leftblock {
@@ -799,6 +802,9 @@ body.menu-open {
   position: absolute;
   top: 0;
   left: 548px;
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(100%);
 }
 @media screen and (min-width: 1200px) {
   .hero-rightblock {
@@ -894,6 +900,12 @@ body.menu-open {
   width: 56px;
 }
 
+.animation-left {
+  opacity: 1;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(0);
+}
+
 @media screen and (max-width: 767px) {
   .recommen {
     padding-top: 60px;
@@ -923,6 +935,11 @@ body.menu-open {
     align-items: center;
   }
 }
+.recommen__text {
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateY(-100%);
+}
 .recommen__title {
   font-style: normal;
   font-weight: 600;
@@ -930,12 +947,18 @@ body.menu-open {
   line-height: 1.25;
   text-transform: capitalize;
   color: #1b1c57;
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(-100%);
 }
 
 .recommen-list {
   display: flex;
   align-items: center;
   margin-right: 136px;
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateY(-100%);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .recommen-list {
@@ -1025,6 +1048,9 @@ body.menu-open {
   display: flex;
   align-items: center;
   margin-left: auto;
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(100%);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .recommen-list-btn {
@@ -1083,11 +1109,23 @@ body.menu-open {
   min-width: 340px;
   transform: scale(1);
   transition: transform 300ms linear;
+  opacity: 0;
+  transition: transform 300ms linear, opacity 300ms linear;
+  transform: translateX(-100%);
 }
 @media screen and (min-width: 1200px) {
   .recommen-card__item:not(:last-child) {
     margin-right: 40px;
   }
+}
+.recommen-card__item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.recommen-card__item:nth-child(3) {
+  transition-delay: 0.4s;
+}
+.recommen-card__item:nth-child(4) {
+  transition-delay: 0.6s;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .recommen-card__item {
@@ -1199,6 +1237,17 @@ body.menu-open {
   color: #047857;
 }
 
+.animation-top,
+.animation-left {
+  opacity: 1;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateY(0);
+}
+
+.animation-left {
+  transform: translateX(0);
+}
+
 .sell {
   padding-bottom: 120px;
   padding-top: 180px;
@@ -1243,6 +1292,9 @@ body.menu-open {
   width: 524px;
   margin-left: 40px;
   margin-right: 148px;
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(-100%);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .sell-leftblock {
@@ -1397,6 +1449,9 @@ body.menu-open {
   z-index: 1;
   width: 528px;
   height: 459px;
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(100%);
 }
 .sell-rightblock__img {
   position: absolute;
@@ -1497,6 +1552,12 @@ body.menu-open {
   }
 }
 
+.animation-left {
+  opacity: 1;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(0);
+}
+
 .review {
   padding-bottom: 100px;
   position: relative;
@@ -1511,6 +1572,9 @@ body.menu-open {
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateY(-100%);
 }
 .review__text::before {
   margin-bottom: 8px;
@@ -1524,6 +1588,9 @@ body.menu-open {
   text-transform: capitalize;
   margin-bottom: 40px;
   color: #1b1c57;
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateY(-100%);
 }
 @media screen and (max-width: 767px) {
   .review__title {
@@ -1578,6 +1645,9 @@ body.menu-open {
 }
 .review-list__item {
   position: relative;
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(-100%);
 }
 .review-list__item:not(:last-child) {
   margin-right: 56px;
@@ -1586,6 +1656,15 @@ body.menu-open {
   .review-list__item:not(:last-child) {
     margin-right: 0;
   }
+}
+.review-list__item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.review-list__item:nth-child(3) {
+  transition-delay: 0.4s;
+}
+.review-list__item:nth-child(4) {
+  transition-delay: 0.6s;
 }
 .review-list__img {
   width: 740px;
@@ -1674,6 +1753,17 @@ body.menu-open {
   color: #3c4563;
 }
 
+.animation-top,
+.animation-left {
+  opacity: 1;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateY(0);
+}
+
+.animation-left {
+  transform: translateX(0);
+}
+
 .partner {
   padding-top: 220px;
   padding-bottom: 120px;
@@ -1704,6 +1794,9 @@ body.menu-open {
 .partner__content {
   text-align: center;
   margin-bottom: 40px;
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateY(-100%);
 }
 .partner__flex {
   display: flex;
@@ -1767,9 +1860,21 @@ body.menu-open {
 }
 .partner-list__item {
   max-width: 400px;
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(-100%);
 }
 .partner-list__item:not(:last-child) {
   margin-bottom: 40px;
+}
+.partner-list__item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.partner-list__item:nth-child(3) {
+  transition-delay: 0.4s;
+}
+.partner-list__item:nth-child(4) {
+  transition-delay: 0.6s;
 }
 
 .partner-content {
@@ -1866,6 +1971,9 @@ body.menu-open {
 .partner-rightblock {
   width: 560px;
   height: 480px;
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(100%);
 }
 @media screen and (max-width: 767px) {
   .partner-rightblock {
@@ -1935,6 +2043,17 @@ body.menu-open {
   margin-right: 12px;
 }
 
+.animation-top,
+.animation-left {
+  opacity: 1;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateY(0);
+}
+
+.animation-left {
+  transform: translateX(0);
+}
+
 .subscribe {
   background-image: url(../../img/subscribe-fon.png);
   background-repeat: no-repeat;
@@ -1947,6 +2066,8 @@ body.menu-open {
   align-items: center;
   position: relative;
   z-index: 1;
+  opacity: 0;
+  transition: opacity 500ms linear;
 }
 
 .subscribe-leftblock__img {
@@ -2011,6 +2132,9 @@ body.menu-open {
   align-items: center;
   padding-top: 65px;
   padding-bottom: 65px;
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateY(-100%);
 }
 .subscribe-centerblock__title {
   font-style: normal;
@@ -2143,6 +2267,22 @@ body.menu-open {
   }
 }
 
+.animation-top {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 500ms linear, opacity 500ms linear;
+}
+
+.animation-left {
+  opacity: 1;
+  transition: opacity 500ms linear;
+}
+
+.animation-opacity {
+  opacity: 1;
+  transition: opacity 500ms linear;
+}
+
 .footer {
   padding-top: 120px;
   padding-bottom: 60px;
@@ -2183,6 +2323,9 @@ body.menu-open {
 
 .footer-leftblock {
   width: 320px;
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(-100%);
 }
 @media screen and (max-width: 767px) {
   .footer-leftblock {
@@ -2272,6 +2415,11 @@ body.menu-open {
     gap: 20px;
   }
 }
+.footer-rightblock__item {
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateY(-100%);
+}
 .footer-rightblock__item:not(:last-child) {
   margin-right: 87px;
 }
@@ -2279,6 +2427,12 @@ body.menu-open {
   .footer-rightblock__item:not(:last-child) {
     margin-right: 0;
   }
+}
+.footer-rightblock__item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.footer-rightblock__item:nth-child(3) {
+  transition-delay: 0.4s;
 }
 .footer-rightblock__text {
   font-style: normal;
@@ -2330,4 +2484,15 @@ body.menu-open {
   transform: scaleX(1);
   transform-origin: bottom left;
   color: #047857;
+}
+
+.animation-left,
+.animation-top {
+  opacity: 1;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(0);
+}
+
+.animation-top {
+  transform: translateY(0);
 }/*# sourceMappingURL=main.css.map */

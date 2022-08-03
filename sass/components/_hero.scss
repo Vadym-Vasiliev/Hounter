@@ -18,6 +18,10 @@
   display: inline-block;
   z-index: 3;
 
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(-100%);
+
   @include tablet {
     margin-right: 0;
     padding-top: 0;
@@ -171,6 +175,10 @@
   top: 0;
   left: 548px;
 
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(100%);
+
   @include desktop {
     overflow: hidden;
   }
@@ -273,4 +281,12 @@
   &__img {
     width: 56px;
   }
+}
+
+//animation
+
+.animation-left {
+  opacity: 1;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(0);
 }

@@ -39,6 +39,10 @@
 .footer-leftblock {
   width: 320px;
 
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(-100%);
+
   @include mobile {
     margin-bottom: 25px;
     text-align: center;
@@ -143,6 +147,17 @@
         margin-right: 0;
       }
     }
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateY(-100%);
+
+    &:nth-child(2) {
+      transition-delay: 0.2s;
+    }
+    &:nth-child(3) {
+      transition-delay: 0.4s;
+    }
   }
   &__text {
     font-style: normal;
@@ -206,4 +221,16 @@
       color: $accent;
     }
   }
+}
+
+//animation
+.animation-left,
+.animation-top {
+  opacity: 1;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(0);
+}
+
+.animation-top {
+  transform: translateY(0);
 }
